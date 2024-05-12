@@ -1,0 +1,398 @@
+/* ZEUS 3-D v3.6 Webpage Style Sheet
+  Logan Francis 2016 */
+
+/*
+
+The order for styles in this document is roughly general styling (e.g. sections, links, text, headings), followed by section styling (e.g. 1d, 2d, citations), followed by things inside those sections (e.g. Zeus head, download form, gallery images) in the order they appear on the page.
+
+A few quick notes on some element selector basics.
+Syntax: selector {property1:value; property2:value;}
+
+Element selector (p, h1, body, etc.): styles element based on name. Can be grouped, e.g., p, h1, h2 {property:value;} applies styling to p, h1, and h2.
+
+Id selector (#id): styles an element based on id, e.g., <element id="navigation">. Used to style unique elements.
+
+Class selector (element.class): styles an element based on class, e.g., <element class="center-text>. Used to style groups of elements.
+  An element can have more than one class e.g., <element class=" gallery gal-small">.
+  Classes can be combined with an element selector, e.g., p.center-text{property:value;} will style all p elements with center class.
+  To specify that only a certain combination of classes should have a certrain property, .class1.class2{property:value;} can be used.
+
+Pesudo-class selector (element.class:pseudo-class): styles a special state of an element, e.g., a:hover{property:value;} will style a link when the cursor is over it.
+
+Descendence Selector Combinator (space): styles all elements that are descendents (i.e., inside) of a specified element, e.g., div p {property:value} will apply styling to all p inside div elements.
+
+Attribute selector (element[attribute]): styles elements with a given attribute. Useful for styling forms, though this can also be done with class or id selectors.
+
+Flexbox notes
+In a flex container (e.g., a div with display:flex set) use justify-content to horizontally align content, and align-items to vertical-align content.
+
+CSS Shorthands References
+
+Margins and padding:
+
+(4 values) element: top right bottom left
+(3 values) element: top right-and-left bottom
+(2 values) element: top-and-bottom right-and-left
+(1 value)  element: all-sides
+
+Text shadows
+text-shadow: horizontal-offset vertical-offset blur color;
+
+Flexbox
+flex: flex-grow flex-shrink flex-basis
+
+*/
+
+
+/*wrapper for page centering*/
+#wrapper {
+  max-width:1046px;
+  min-width:536px;
+  padding-left:60px; /*preserves some exposed background on the sides when the window shrinks*/
+  padding-right:60px;
+  padding-bottom:86%;
+  margin:0px auto; /*(margin:top-bottom left-right), 0px auto centers the page*/
+  display:-webkit-box; /*each of the different values of display is for compatibility with older browser versions*/
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-flow: row wrap; /*sets flex-line, a line along which flex items are layed out. content will be laid out in rows and wrap when an edge is reached.*/
+  flex-flow: row wrap;
+}
+/* General styling of the body, sections, paragraphs, etc.*/
+body {
+  background-image:url("../images/background.jpg");
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:center;
+}
+section, header, footer {
+  background-color:rgba(255, 255, 255, 0.76);
+  box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 2px rgba(0, 0, 0, 0.2);
+  margin:3px;
+  border-radius:5px;
+  flex: 1;
+}
+section {
+  padding:10px;
+}
+header {
+  display: flex;
+  align-items:center;
+  justify-content: space-around;
+  flex-flow:row wrap;
+  flex:1 100%;
+  padding:10px;
+  padding-bottom:5px;
+}
+footer {
+  flex:1 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family:'Roboto', sans-serif;
+  text-shadow: 1.5px 1.5px 1px rgba(0,0,0,0.3);
+  color:#6e0408;
+  margin:5px;
+}
+p {
+  font-family:'Roboto', sans-serif;
+}
+a {
+  font-family:'Roboto', sans-serif;
+  color:#3131D6;
+  text-decoration:none;
+  font-weight:bold;
+}
+a:hover {
+  text-shadow: 0 0 3px #aaa;
+  text-decoration:none;
+}
+a:visited {
+  color:#0066CC;
+}
+/*column container, changes flex line direction to make 3-D and Simulations section stack vertically.*/
+#column-box {
+  flex:1;
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-flow:column wrap;
+  flex-flow:column wrap;
+}
+/*row container, creates a separate flex-box that spans the page to hold elements whose sizes are specified relative to eachother, e.g. citations & links.*/
+#row-box {
+  flex:1 100%;
+  display:-webkit-box;
+  display:-moz-box;
+  display:-ms-flexbox;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-flex-flow:row wrap;
+  flex-flow:row wrap;
+}
+/*Unique Section Styling*/
+#what-is-zeus, #download-zeus  {
+  flex:1; /*relative size of 1 and automatic length*/
+}
+#galleries {
+  flex:1 100%;
+}
+/*note that you can't use a number as the first character of an id, hence one-d and not 1-d*/
+#one-d-problems {
+  flex:1 100%;
+}
+#two-d-problems{
+  flex:2.15;
+}
+/* The #column-box bit is in case you want the 3-D problems separated again into tests and simulations, with these stacked on top of each other beside a taller 2-D test problem box, as Logan originally designed it.*/
+/*#column-box {
+  flex: auto 1;
+  display:flex;
+  flex-flow:column wrap;
+}*/
+#three-d-problems{
+  flex:1;
+}
+/*#simulations {
+  flex:1;
+}*/
+#ext-links{
+  flex:1;
+}
+#acknow-citations{
+  flex:2.4;
+}
+/*Layout for screen sizes narrower than 960px. When the screen becomes narrower than 800px, the
+flex value (flex: 1 100%) will be taken on and the sections will collapse into a single column layout.*/
+@media all and (max-width: 960px) {
+    #what-is-zeus, #download-zeus, #two-d-problems, #three-d-problems, #simulations, #acknow-citations, #ext-links {
+      flex: 1 100%;
+  }
+}
+/*Collapse to a column layout when it is too narrow for the logos and banner to fit on one line.*/
+@media all and (max-width: 1180px) {
+    header {
+      /*flex-flow:column wrap;*/
+      flex-flow:row wrap;
+  }
+    #zeus-banner {
+    margin: 0 15%;
+    /*margin: auto;*/
+    -webkit-order:2;
+    order:-1;
+  }
+    /*#ica-logo {
+    margin-left: 200px;
+  }
+    #smu-logo {
+    margin-right: 200px;
+  }*/
+}
+/*header banner image and logos*/
+#ica-logo, #smu-logo, #zeus-banner {
+  padding:5px;
+}
+/*Zeus head image*/
+#ascii-zeus {
+  display:block;
+  position:relative;
+  width:200px;
+  height:280px;
+  float:left; /*used here to float the image to the left of the text*/
+  margin: 0 20px 10px 0;
+}
+#ascii-zeus img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.top {
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+#ascii-zeus img.top:hover {
+  opacity:0;
+}
+/* Link to ZEUS-3D 3.5 site*/
+#dzeus35-site {
+  font-family:'Roboto', sans-serif;
+  border-radius:5px;
+  margin:20px;
+  color:rgb(128, 89, 66);
+  font-size: 115%;
+  display:inline-block;
+  background-color:rgba(169,169,169,0.5);
+  padding:5px;
+  text-align:center;
+  box-shadow:0 1.5px 1px rgba(0,0,0,0.6);
+}
+/*#dzeus35-site a {
+  font-family:"Times New Roman", Times, serif;
+}*/
+/*download zeus form and input styling*/
+#submit-button {
+  text-align:center;
+  display:inline-block;
+  box-sizing:border-box;
+  width:100%;
+  background-color:#8C9058;/*#38ABBD;*/
+  box-shadow:0 1.5px 1px rgba(0,0,0,0.6);
+  color:white;
+  font-weight:bold;
+  font-size:100%;
+  padding:14px 10px;
+  margin:8px 0;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+#submit-button:hover {
+  background-color:#7b7f4d;
+}
+#dl-zeus-box {
+  width:60%;
+  margin:0px auto;
+}
+/*'Honeypot' form. If this invisble form is filled, the download button won't work. A normal user will never see it because of display:none, so only spambots blindy filling the form should fill it out, and will be unable to proceed.*/
+#check {
+  display:none;
+}
+input[type=text] {
+  width:100%;
+  padding:5px 10px; /*padding:top-and-bottom left-and-right*/
+  margin:8px 0px;
+  border: 1px solid #ccc;
+  border-radius:5px;
+  font-size:125%;
+  box-sizing:border-box; /*size of element includes content, padding, and border, but not margin*/
+}
+input[type=submit] {
+  width:100%;
+  background-color:#8C9058;/*#38ABBD;*/
+  box-shadow:0 1.5px 1px rgba(0,0,0,0.6);
+  color:white;
+  font-weight:bold;
+  font-size:100%;
+  padding:14px 20px;
+  margin:8px 0;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+label {
+  font-family:'Roboto', sans-serif;
+}
+input[type=submit]:hover {
+  background-color:#7b7f4d;/*#34a0b1*/
+}
+
+/*Image gallery styling.*/
+/*floated elements (e.g., gallery images) can overflow outside their container, this class fixes this.*/
+.clearfix {
+  overflow:auto;
+}
+/*gallery text*/
+#gal-text {
+  float:left;
+  padding-left:5px;
+  margin:0px;
+}
+/*image gallery container styling*/
+.gallery {
+  margin:5px;
+  border:1px solid #bbb;
+  border-radius:5px;
+  float:left;
+  height:auto;
+}
+/* styling for elements with the gallery AND gal-norm class*/
+.gallery.gal-norm {
+  width:90px;
+}
+/* styling for elements with the gallery AND gal-small class*/
+.gallery.gal-small {
+  width:87px;
+}
+/*shadow styling, two parts with differing vertical offset and blur are used*/
+.black-shadow {
+  box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+.red-shadow {
+  box-shadow:0 4px 8px 0 rgba(255, 0, 0, 0.6), 0 6px 20px 0 rgba(255, 0, 0, 0.6);
+}
+.yellow-shadow {
+  box-shadow:0 4px 8px 0 rgba(255, 255, 0, 0.6), 0 6px 20px 0 rgba(255, 255, 0, 0.6);
+}
+.green-shadow {
+  box-shadow:0 4px 8px 0 rgba(120, 220, 50, 0.6), 0 6px 20px 0 rgba(120, 220, 50, 0.6);
+}
+/*set width and height of img elements inside the gallery container*/
+.gallery img{
+  width:100%;
+  border-radius:5px 5px 0 0;
+  opacity:0.85;
+}
+.gallery.gal-norm img {
+  height:90px;
+}
+.gallery.gal-small img {
+  height:90px;
+}
+.gallery img:hover {
+  opacity:1.0;
+  filter: alpha(opacity=100);
+}
+/*caption styling*/
+.gal-cap {
+  text-align:center;
+  padding:0px;
+}
+/*dzeus36.s and zeus36.mac download button styling, note that the links must be treated as block level for margins seperating buttons vertically to work correctly*/
+.gal-cap a {
+  width:80px;
+  display:inline-block;
+  box-shadow:0 1px 1px rgba(0,0,0,0.7);
+  color:white;
+  font-size:12px;
+  text-decoration:none;
+  padding:2px 2px;
+  margin:0 0 5px 0;
+  border-radius:5px;
+  cursor:pointer;
+}
+.dl-dzeus36 {
+  background-color:#8C9058;/*#bbaa55*/
+}
+.dl-dzeus36:hover {
+  background-color:#7b7f4d;/*#a49442*/
+}
+.dl-zeus36 {
+  background-color:#8C9058;/*#90945A*/
+}
+.dl-zeus36:hover {
+  background-color:#7b7f4d;
+}
+/*Acknowledgement images*/
+#logo-container {
+  text-align:center;
+}
+#nserc-logo, #acenet-logo, #cfi-logo {
+  display:inline-block;
+  vertical-align:middle;
+  padding:0px 30px;
+}
+/*footer text*/
+#last-updated {
+  float:left;
+  padding:5px;
+}
+#bg-copyright {
+  float:right;
+  padding:5px;
+}

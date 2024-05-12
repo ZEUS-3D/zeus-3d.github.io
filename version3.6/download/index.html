@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Download ZEUS-3D, v3.6</title>
+  <link rel="shortcut icon" href="../inc/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="../inc/css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300|Bevan' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div id="wrapper">
+
+      <section id="downloading-zeus">
+        <h2>Downloading <em>ZEUS-3D</em></h2>
+        <p><em>ZEUS-3D</em>, version 3.6, is being offered to serious investigators for their own scientific use free of charge, and subject only to an <a href="../inc/documents/user_agreement/user_agreement.pdf" title="a 1-page PDF file (100 kB)" target="_blank">implicit user-agreement</a>.  By virtue of using the code, the user is assumed to have read and agreed to its terms.</p>
+        <p> In exchange, the new user is asked to fill out the fields with current and accurate data.  These are needed for reporting purposes and to notify users on an extremely occasional basis of upgrades and/or bug reports.  Other than the statistics drawn from these data, they will not be shared with anyone.  What you are about to download represents a significant portion of the author's life's work, and providing accurate data in these fields should be considered a modest gesture of acknowledgement in return.  Thank you for your understanding.</p>
+        <p> Once all fields have been completed, <em>two</em> clicks on the green download button will launch an e-mail from "ZEUS-3D curator" to the given address, from which the tar-ball dzeus36.tar.gz may be downloaded. If you don't see this e-mail in your inbox shortly, please check your spam box; some systems may mark this as spam coming, as it does, from an e-mailing daemon.</p>
+
+
+        <div id="dl-zeus-box">
+          <form name="dl-zeus-form" action="#" onsubmit="return validateForm()" method="POST">
+            <table id="dl-zeus-table">
+              <tr>
+                <td align="right"><label for="name">name</label></td>
+                <td><input id="name" type="text" name="Name" value=""></td>
+                <td><label for="position"> &nbsp;&nbsp;&nbsp;position</label></td>
+                <td><input id="position" type="text" name="Position" value=""></td>
+              </tr>
+              <tr>
+                <td><label for="institution">institution</label></td>
+                <td colspan="3"><input id="institution" type="text" name="Institution" value=""></td>
+              </tr>
+              <tr>
+                <td align="right"><label for="mail">e-mail</label></td>
+                <td colspan="3"><input id="mail" type="text" name="email" value=""></td>
+              </tr>
+              <tr>
+                <td colspan="3"><input id="check" type="text" name="Check" value=""></td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <input type="hidden" name="recipient" value="dclarke@ap.smu.ca">
+                  <input type="hidden" name="subject" value="New download of ZEUS-3D, v3.6.">
+                  <input type="hidden" name="required" value="Name,Institution,Position,email">
+                  <input type="hidden" name="redirect" value="index.html">
+                  <input type="submit" name="Submit" value="The above data are current and I wish to download the code." onclick="">
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+
+      <!--Javascript to check if all fields are filled-->
+      <script src="../inc/scripts/validate-form.js"></script>
+
+      <p><a href="../">Return to the home page</a></p>
+
+      </section>
+
+  </div>
+
+</body>
+
+</html>

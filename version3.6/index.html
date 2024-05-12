@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ZEUS-3D, v3.6 (ICA)</title>
+  <link rel="stylesheet" type="text/css" href="inc/css/style.css">
+  <link rel="shortcut icon" href="inc/images/favicon.ico" type="image/x-icon" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300|Bevan' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <a href="http://www.ica.smu.ca/" target="_blank"><img id="ica-logo" src="inc/images/icalogo_dcblk.png" width="217" height="60" alt="Institute for Computational Astrophysics logo"></a>
+      <!--<img id="zeus-banner" src="./images/banner_new.png" width="491"height="94" alt="Zeus Logo">-->
+      <img id="zeus-banner" src="inc/images/welcome.png" width="490"height="100" alt="Zeus Logo">
+      <a href="http://www.smu.ca/" target="_blank"><img id="smu-logo" src="inc/images/smu_logo_3cols.png" width="177" height="60" alt="Saint Mary's University logo"></a>
+    </header>
+
+    <section id="what-is-zeus">
+      <h2>What is <em>ZEUS-3D</em>?</h2>
+      <p><a id="ascii-zeus" href="inc/images/banner.txt" title="*dk banner from dzeus36 acknowledgements, user agreement, and citations" target="_blank">
+    	<img src="inc/images/banner_trans.gif" alt="ascii-zeus" width="200" height="280">
+    	<img class="top" src="inc/images/zeus3d_icon.jpg"alt="zeus icon" width="200" height="280"></a>
+    	<em>ZEUS-3D</em> is a multi-physics magneto- hydrodynamical (MHD) code written in FORTRAN77 designed primarily for, but not restricted to, astrophysical applica- tions. For an overview of its design, capabilities, and recent improvements, see <a href="inc/documents/what_is_zeus/whatiszeus.pdf" title="a 12-page PDF file" target="_blank">What is <em>ZEUS-3D</em>?</a>.  For compre- hensive instructions on how to use the code, see the <a href="inc/documents/dzeus36_man.pdf" title="a 106-page PDF file" target="_blank"><em>ZEUS-3D</em> user manual</a>.</p>
+      <p>A complete description of most of the algorithms used in <em>ZEUS-3D</em> and many of its tests may be found in:</p>
+      <p>1. <a href="inc/documents/cmoc_apj457.pdf" target="_blank">Clarke, D., 1996, ApJ, 457, 291.</a><br>
+        2. <a href="inc/documents/zeus_apjs187.pdf" target="_blank">Clarke, D., 2010, ApJS, 187, 119.</a></p>
+    </section>
+
+    <section id="download-zeus">
+      <h2>Downloading <em>ZEUS-3D</em></h2>
+      <p> Users of <em>ZEUS-3D</em> should be aware of the <a href="inc/documents/user_agreement/user_agreement.pdf" title="a PDF file"  target="_blank">Implicit User Agreement</a> which, by virtue of using the code, the user is assumed to have read and agreed to be bound by its terms.  In addition, the user should be aware of the proper <a href="inc/documents/acknowledgements/acknowledge.pdf" title="a PDF file" target="_blank">Citations and Acknowledgements</a> to be used in any publications reporting results of the code.</p>
+      <p> Clicking on the download button below confirms your agreement to the terms of use, and takes you to a page where you will complete four fields of information about yourself before the download is launched.</p>
+
+      <a id="submit-button" href="download/" title="a 37 MByte tarball">I agree to the terms of use and wish to download <em>ZEUS-3D</em></a>
+
+      <div id="dzeus35-site">
+	  This site hosts version 3.6 of the code.  Version 3.5 is still available from the <a href="http://ap.smu.ca/~dclarke/zeus3d/version3.5/" target="_blank">original <em>ZEUS-3D</em> website</a>.</div>
+
+    </section>
+
+    <section id="galleries">
+      <h2>Galleries</h2>
+        <p id="gal-text">Problems highlighted in green exemplify improvements over version 3.5; those in yellow point out lingering concerns with version 3.6.</p>
+    </section>
+
+    <!-- clearfix class prevents images from overflowing the containing gallery section. -->
+    <section id="one-d-problems" class="clearfix">
+      <h3>1-D Problems</h3>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.01/advect_XYZ.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.01/thumb.png" title="1-D Problem 1: XYZ advection" alt="1-D Problem 1: XYZ advection"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.01/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.01/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.02/advect_ZRP.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.02/thumb.png" title="1-D Problem 2: ZR&Phi; advection" alt="1-D Problem 2: ZR&Phi; advection"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.02/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.02/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm yellow-shadow">
+        <a href="inc/gallery/1dprob/problem.03/advect_RTP.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.03/thumb.png" title="1-D Problem 3: R&Theta;&Phi; advection" alt="1-D Problem 3: R&Theta;&Phi; advection"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.03/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.03/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.04/relax_ZRP.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.04/thumb.png" title="1-D Problem 4: ZR&Phi; relaxation " alt="1-D Problem 4: ZR&Phi; relaxation"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.04/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.04/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.05/relax_RTP.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.05/thumb.png" title="1-D Problem 5: R&Theta;&Phi; relaxation" alt="1-D Problem 5: R&Theta;&Phi; relaxation"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.05/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.05/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.06/zpinch.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.06/thumb.png" title="1-D Problem 6: Bennett Pinch" alt="1-D Problem 6: Bennett Pinch"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.06/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.06/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.07/alfven_1D.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.07/thumb.png" title="1-D Problem 7: Alfv&eacute;n waves" alt="1-D Problem 7: Alfv&eacute;n waves"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.07/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.07/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.08/mhdrotor.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.08/thumb.png" title="1-D Problem 8: MHD rotor" alt="1-D Problem 8: MHD rotor"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.08/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.08/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm green-shadow">
+        <a href="inc/gallery/1dprob/problem.09/fig1a_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.09/thumb.png" title="1-D Problem 9: Fig. 1a, R&amp;J95" alt="1-D Problem 9: Fig. 1a, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.09/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.09/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.10/fig1b_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.10/thumb.png" title="1-D Problem 10: Fig. 1b, R&amp;J95" alt="1-D Problem 10: Fig. 1b, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.10/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.10/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.11/fig2a_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.11/thumb.png" title="1-D Problem 11: Fig. 2a, R&amp;J95" alt="1-D Problem 11: Fig. 2a, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.11/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.11/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.12/fig2b_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.12/thumb.png" title="1-D Problem 12: Fig. 2b, R&amp;J95" alt="1-D Problem 12: Fig. 2b, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.12/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.12/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.13/fig3a_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.13/thumb.png" title="1-D Problem 13: Fig. 3a, R&amp;J95" alt="1-D Problem 13: Fig. 3a, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.13/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.13/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm green-shadow">
+        <a href="inc/gallery/1dprob/problem.14/fig3b_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.14/thumb.png" title="1-D Problem 14: Fig. 3b, R&amp;J95" alt="1-D Problem 14: Fig. 3b, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.14/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.14/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.15/fig4a_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.15/thumb.png" title="1-D Problem 15: Fig. 4a, R&amp;J95" alt="1-D Problem 15: Fig. 4a, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.15/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.15/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.16/fig4b_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.16/thumb.png" title="1-D Problem 16: Fig. 4b, R&amp;J95" alt="1-D Problem 16: Fig. 4b, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.16/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.16/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.17/fig4c_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.17/thumb.png" title="1-D Problem 17: Fig. 4c, R&amp;J95" alt="1-D Problem 17: Fig. 4c, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.17/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.17/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm yellow-shadow">
+        <a href="inc/gallery/1dprob/problem.18/fig4d_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.18/thumb.png" title="1-D Problem 18: Fig. 4d, R&amp;J95" alt="1-D Problem 18: Fig. 4d, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.18/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.18/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.19/fig5a_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.19/thumb.png" title="1-D Problem 19: Fig. 5a, R&amp;J95" alt="1-D Problem 19: Fig. 5a, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.19/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.19/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.20/fig5b_rj.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.20/thumb.png" title="1-D Problem 20: Fig. 5b, R&amp;J95" alt="1-D Problem 20: Fig. 5b, R&amp;J95"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.20/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.20/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm green-shadow">
+        <a href="inc/gallery/1dprob/problem.21/fig2_falle.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.21/thumb.png" title="1-D Problem 21: Fig. 2, Falle 2002" alt="1-D Problem 21: Fig. 2, Falle 2002"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.21/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.21/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm green-shadow">
+        <a href="inc/gallery/1dprob/problem.22/fig6_falle.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.22/thumb.png" title="1-D Problem 22: Fig. 6, Falle 2002" alt="1-D Problem 22: Fig. 6, Falle 2002"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.22/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.22/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.23/cshock_ad.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.23/thumb.png" title="1-D Problem 23: adiabatic C-shock" alt="1-D Problem 23: adiabatic C-shock"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.23/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.23/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-norm black-shadow">
+        <a href="inc/gallery/1dprob/problem.24/cshock_iso.pdf" target="_blank">
+          <img src="inc/gallery/1dprob/problem.24/thumb.png" title="1-D Problem 24: isothermal C-shock" alt="1-D Problem 24: isothermal C-shock"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/1dprob/problem.24/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/1dprob/problem.24/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="two-d-problems" class="clearfix">
+      <h3>2-D Problems</h3>
+
+      <div class="gallery gal-small green-shadow">
+        <a href="inc/gallery/2dprob/problem.01/advect_2D.pdf" target="_blank">
+          <img src="inc/gallery/2dprob/problem.01/thumb.png" title="2-D Problem 1: XYZ advection" alt="2-D Problem 1: XYZ advection"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/2dprob/problem.01/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/2dprob/problem.01/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-small green-shadow">
+        <a href="inc/gallery/2dprob/problem.02/alfven_2D.pdf" target="_blank">
+          <img src="inc/gallery/2dprob/problem.02/thumb.png" title="2-D Problem 2: Shear Alfvén Wave" alt="2-D Problem 2: Shear Alfvén Wave"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/2dprob/problem.02/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/2dprob/problem.02/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-small black-shadow">
+        <a href="inc/gallery/2dprob/problem.03/MHD_BC_zrp.pdf" target="_blank">
+          <img src="inc/gallery/2dprob/problem.03/thumb.png" title="2-D Problem 3: MHD boundary conditions, ZR&Phi;" alt="2-D Problem 3: MHD boundary conditions, ZR&Phi;"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/2dprob/problem.03/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/2dprob/problem.03/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-small yellow-shadow">
+        <a href="inc/gallery/2dprob/problem.04/khinst.pdf" target="_blank">
+          <img src="inc/gallery/2dprob/problem.04/thumb.png" title="2-D Problem 4: Kelvin-Helmholtz instability" alt="2-D Problem 4: Kelvin-Helmholtz
+          instability"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/2dprob/problem.04/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/2dprob/problem.04/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-small black-shadow">
+        <a href="inc/gallery/2dprob/problem.05/mhdblast.pdf" target="_blank">
+          <img src="inc/gallery/2dprob/problem.05/thumb.png" title="2-D Problem 5: MHD blast, Fig. 13 G&amp;S05" alt="2-D Problem 5: MHD blast, Fig. 13 G&amp;S05"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/2dprob/problem.05/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/2dprob/problem.05/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+      <div class="gallery gal-small black-shadow">
+        <a href="inc/gallery/2dprob/problem.06/orszagtang.pdf" target="_blank">
+          <img src="inc/gallery/2dprob/problem.06/thumb.png" title="2-D Problem 6: Orszag-Tang vortex" alt="2-D Problem 6: Orszag-Tang vortex"></a>
+        <div class="gal-cap">
+          <a class="dl-dzeus36" href="inc/gallery/2dprob/problem.06/dzeus36.html" target="_blank">dzeus36.s</a>
+          <a class="dl-zeus36" href="inc/gallery/2dprob/problem.06/zeus36.mac" target="_blank">zeus36.mac</a>
+        </div>
+      </div>
+
+    </section>
+
+    <div id="column-box">
+      <section id="three-d-problems" class="clearfix">
+        <h3>3-D Problems</h3>
+
+        <div class="gallery gal-small black-shadow">
+          <a href="inc/gallery/3dprob/problem.01/sedov.pdf" target="_blank">
+            <img src="inc/gallery/3dprob/problem.01/thumb.png" title="3-D Problem 1: Sedov blast wave" alt="3-D Problem 1: Sedov blast wave"></a>
+          <div class="gal-cap">
+            <a class="dl-dzeus36" href="inc/gallery/3dprob/problem.01/dzeus36.html" target="_blank">dzeus36.s</a>
+            <a class="dl-zeus36" href="inc/gallery/3dprob/problem.01/zeus36.mac" target="_blank">zeus36.mac</a>
+          </div>
+        </div>
+
+      <!--</section>
+
+      <section id="simulations" class="clearfix">
+        <h3>Simulations</h3>-->
+
+        <div class="gallery gal-small black-shadow">
+          <a href="inc/gallery/3dprob/problem.02/supalfv.pdf" target="_blank">
+            <img src="inc/gallery/3dprob/problem.02/thumb.png" title="3-D Problem 2: Super-Alfvénic turbulence" alt="3-D Problem 2: Super-Alfvénic turbulence"></a>
+          <div class="gal-cap">
+            <a class="dl-dzeus36" href="inc/gallery/3dprob/problem.02/dzeus36.html" target="_blank">dzeus36.s</a>
+            <a class="dl-zeus36" href="inc/gallery/3dprob/problem.02/zeus36.mac" target="_blank">zeus36.mac</a>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <div id="row-box">
+      <section id="ext-links">
+        <h2>Related Links</h2>
+        <p><a href="http://www.ap.smu.ca/" target="_blank">Department of Astronomy and Physics</a></p>
+        <p><a href="http://www.ap.smu.ca/~dclarke" target="_blank">David Clarke's homepage</a></p>
+        <p><a href="http://www.astro.princeton.edu/~jstone" target="_blank">Jim Stone's homepage</a></p>
+      	<p><a href="http://enzo-project.org/" target="_blank"><em>ENZO</em> hydrodynamics code</a></p>
+      </section>
+
+      <section id="acknow-citations">
+        <h2>Acknowledgements</h2>
+        <p>The author gratefully acknowledges the many contributions of those listed in <a href="inc/documents/acknowledgements/acknowledge.pdf">Acknowledging <em>ZEUS-3D</em></a> to the development of version 3.6, and Logan Francis for developing this website.</p>
+        <p>Financial support and computing resources for the development of <em>ZEUS-3D</em> have been provided by:</p>
+        <div id="logo-container" class="clearfix">
+          <a id="nserc-logo" href="http://www.nserc-crsng.gc.ca/" target="_blank"><img src="inc/images/NSERC_C.png" alt="ICA logo"
+            width="136"height="54"></a>
+          <a id="cfi-logo" href="http://www.innovation.ca/" target="_blank"><img src="inc/images/CFI_2C_RGB.png" alt="CFI logo"
+            width="166" height="38"></a>
+          <a id="acenet-logo" href="http://www.ace-net.ca/" target="_blank"><img src="inc/images/ACENET_LOGO.png" alt="ACEnet logo"
+            width="153" height="68"></a>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <h5 id="last-updated">Last updated: June 1, 2016</h5>
+    	<h5 id="bg-copyright">Background: Temple of Zeus in Athens, Greece (© A.Savin, Wikimedia Commons)</h5>
+    </footer>
+  </div>
+</body>
+
+</html>
