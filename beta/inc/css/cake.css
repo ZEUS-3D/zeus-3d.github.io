@@ -1,0 +1,395 @@
+/*
+ Theme Name:   Red-velvet Layer Cake
+ Theme URI:    https://zeus-3d.github.io
+ Description:  Layer Cake (red-velvet) by Dane Aleksander.
+ Author:       Dane Aleksander
+ Author URI:   https://danealeksander.github.io/
+ Template:
+ Version:      0.0.1
+*/
+
+/* - root
+ * - reset
+ * - transition
+ * 1 architecture
+ * 2 font
+ * 3 input
+ *
+ *
+ *
+ *
+ * 8 color
+ * 9 media
+ * - @queries
+ */
+
+
+
+/* ROOT */
+
+:root {
+
+  --base-i: 1.25em;
+  --base-ii: 2em;
+  --base-iii: 3em;
+  --base-iv: 5em;
+  --base-v: 8em;
+
+}
+
+
+
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a,
+img.button {
+  cursor: pointer;
+}
+br.clear {
+  clear: both;
+}
+.clear {
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  height: 1.25em;
+  width: 1.25em;
+}
+
+
+
+/* TRANSITION */
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    40% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    0% { opacity: 0; }
+    40% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    40% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    0% { opacity: 0; }
+    40% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+body.red-velvet:not(.red-velvet-page) {
+  -webkit-animation: fadein 0.8s;
+     -moz-animation: fadein 0.8s;
+      -ms-animation: fadein 0.8s;
+       -o-animation: fadein 0.8s;
+          animation: fadein 0.8s;
+}
+body.red-velvet-page {
+  -webkit-animation: fadein 0.5s;
+     -moz-animation: fadein 0.5s;
+      -ms-animation: fadein 0.5s;
+       -o-animation: fadein 0.5s;
+          animation: fadein 0.5s;
+}
+
+
+
+
+/* 1 ARCHITECTURE */
+
+html {
+  -webkit-text-size-adjust: 62.5%;
+     -moz-text-size-adjust: 62.5%;
+      -ms-text-size-adjust: 62.5%;
+       -o-text-size-adjust: 62.5%;
+  font-size: 62.5%;
+  size: 62.5%;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+button, input, select, textarea {
+  width: 100%;
+}
+
+/* 1 1 FRAMEWORK */
+
+.red-velvet > div {
+  display: grid;
+  grid-gap: 2em;
+  height: 100%;
+}
+.red-velvet-cake {
+  padding: 13em 13em;
+}
+.red-velvet-cake-cocoa,
+.red-velvet-cake-buttermilk,
+.red-velvet-cake-vinegar {
+  padding: 8vh 13em;
+}
+
+/* 1 2 GRID */
+
+.grid-layer {
+  grid-area: layer;
+}
+.grid-left {
+  grid-area: left;
+}
+.grid-right {
+  grid-area: right;
+}
+.grid-center {
+  grid-area: center;
+}
+
+/* 1 2 GRID LAYOUT */
+
+.one-two,
+.three-five {
+  grid-template-areas:
+    'left right right';
+}
+.two-one,
+.five-three {
+  grid-template-areas:
+    'left left right';
+}
+.copy {
+  grid-template-areas:
+    'left center right';
+}
+.bar {
+  grid-template-areas:
+    'left left right'
+    'bar-1 bar-2 bar-3'
+    'bar-4 bar-5 bar-6'
+    'bar-7 bar-8 bar-9'
+    'bar-10 bar-11 bar-12';
+}
+.layer {
+  grid-template-areas:
+    'layer';
+  grid-template-columns: 1fr;
+}
+.one-two,
+.two-one,
+.bar {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.three-five,
+.five-three,
+.copy {
+  grid-template-columns: 3fr 2fr 3fr;
+}
+
+/* 1 4 GRID GUTTER */
+
+.grid {
+  align-content: start;
+  display: inline-grid;
+  padding: 3em;
+}
+.grid-end {
+  justify-content: end;
+}
+
+/* 1 5 FONT GUTTER */
+
+p {
+  margin-top: 1em;
+}
+h3, h4,
+.break-iii {
+  margin-top: var(--base-iii);
+}
+.break-ii {
+  margin-top: var(--base-ii);
+}
+h5, h6 {
+  margin-top: calc( 4em / 3 );
+}
+.break-i {
+  margin-top: var(--base-i);
+}
+ul {
+  margin: 0 0 1em 0;
+}
+form {
+  margin: 1em 0;
+}
+button, input, select, textarea {
+  padding: 1em;
+}
+li, input {
+  margin: 1em 0 0;
+}
+
+
+
+/* 2 FONT */
+
+body {
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+h1, h3, h5, p, li {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 300;
+}
+h2, h4, h6,
+b {
+  font-weight: 700;
+}
+a {
+  font-weight: 500;
+  text-decoration: none;
+}
+i < *:not(h1, h3, h5, p, li) {
+  font-style: normal;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+/* 2 1 FONT-SIZE */
+
+h1, h2 {
+  font-size: var(--base-v);
+}
+h3, h4 {
+  font-size: var(--base-iv);
+}
+h5, h6 {
+  font-size: var(--base-iii);
+}
+p, li,
+button, input, select, textarea {
+  font-size: var(--base-ii);
+}
+.small {
+  font-size: var(--base-i);
+}
+
+/* 2 2 TYPE */
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+.text-quote {
+  font-size: 3em;
+  line-height: 0;
+  vertical-align: -0.45em;
+}
+
+ul li {
+  list-style: square;
+}
+
+
+
+/* 3 INPUT */
+
+button,
+input[type="button"],
+input[type="checkbox"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+     -moz-appearance: button;
+      -ms-appearance: button;
+       -o-appearance: button;
+          appearance: button;
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+}
+button:hover, button:focus,
+input[type="button"]:hover,
+input[type="checkbox"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+input[type="button"]:focus,
+input[type="checkbox"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  outline: none;
+}
+
+
+
+/* 8 COLOR */
+
+body {
+  background-color: white;
+  color: black;
+}
+
+/* 8 1 FONT-COLOR */
+
+a {
+  color: inherit;
+}
+
+/* 8 - SCROLL-COLOR */
+
+::-webkit-scrollbar-track { background: black; }
+::-webkit-scrollbar-thumb { background: white; }
+
+
+
+/* 9 MEDIA */
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+/* 9 1 MARK */
+
+img.logo {
+  min-width: 8em;
+  width: 6.25vw;
+}
+
+
+
+/* - QUERIES */
+
+@media print {
+
+}
