@@ -68,6 +68,7 @@ button:hover {
 .red-velvet-cake-buttermilk .matte {
   border: 1.25em solid black;
 }
+.red-velvet-cake.matte,
 .red-velvet-cake-cocoa .matte {
   border: 1.25em solid white;
 }
