@@ -23,7 +23,10 @@
   color: white;
 }
 a:hover {
-  color: yellow;
+  color: red;
+}
+.red-velvet-cake-cocoa a:hover {
+  color: black;
 }
 button,
 .red-velvet-cake-vinegar,
