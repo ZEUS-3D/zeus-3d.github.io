@@ -25,6 +25,7 @@
 a:hover {
   color: red;
 }
+nav a,
 .red-velvet-cake-cocoa a:hover {
   color: black;
 }
@@ -46,6 +47,7 @@ button,
 .red-velvet-cake-cocoa {
   background-color: brown;
 }
+nav,
 .red-velvet-cake-buttermilk {
   background-color: white;
 }

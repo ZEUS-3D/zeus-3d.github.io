@@ -242,8 +242,40 @@ form {
 button, input, select, textarea {
   padding: 1em;
 }
-li, input {
+ul li, input {
   margin: 1em 0 0;
+}
+
+/* 1 6 NAVIGATION */
+
+nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+nav ul {
+  margin: 0 auto;
+  padding: 0 13em;
+  display: block;
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.left,
+nav ul li {
+  float: left;
+  margin: 0;
+  padding: 0.125em 1em;;
+}
+.right {
+  float: right;
 }
 
 
@@ -261,7 +293,8 @@ h1, h3, h5, p, li {
   font-weight: 300;
 }
 h2, h4, h6,
-b {
+b,
+nav ul li a {
   font-weight: 700;
 }
 a {
@@ -292,7 +325,7 @@ button, input, select, textarea {
   font-size: var(--base-ii);
 }
 .small {
-  font-size: var(--base-i);
+  font-size: 1em;
 }
 
 /* 2 2 TYPE */
