@@ -16,16 +16,16 @@
 /* 8 COLOR */
 
 /* 8 1 FONT-COLOR */
-
 .red-velvet-cake-vinegar a,
 .red-velvet-cake-cocoa a,
 .red-velvet-cake {
   color: white;
 }
+nav a,
 a:hover {
   color: red;
 }
-nav a,
+nav a:hover,
 .red-velvet-cake-cocoa a:hover {
   color: black;
 }
@@ -37,9 +37,11 @@ button,
 
 /* 8 2 BACKGROUND-COLOR */
 
-button,
+button {
+  background-color: red;
+}
 .red-velvet-cake {
-  /* background-color: red; */
+  /* background-color: ; */
 }
 .red-velvet-cake-vinegar {
   background-color: black;
