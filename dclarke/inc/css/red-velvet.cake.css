@@ -16,23 +16,23 @@
 /* 8 COLOR */
 
 /* 8 1 FONT-COLOR */
-.red-velvet-cake-vinegar a,
-.red-velvet-cake-cocoa a,
-.red-velvet-cake {
-  color: white;
-}
-nav a,
+
 a:hover {
   color: red;
 }
-nav a:hover,
-.red-velvet-cake-cocoa a:hover {
-  color: black;
+nav a {
+  color: brown;
 }
 button,
+.red-velvet-cake,
+.red-velvet-cake-cocoa,
+.red-velvet-cake-cocoa a,
 .red-velvet-cake-vinegar,
-.red-velvet-cake-cocoa {
+.red-velvet-cake-vinegar a {
   color: white;
+}
+.red-velvet-cake-cocoa a:hover {
+  color: black;
 }
 
 /* 8 2 BACKGROUND-COLOR */
