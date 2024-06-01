@@ -67,15 +67,15 @@ button:hover {
 /* 8 3 BORDER-COLOR */
 
 .red-velvet-cake .matte {
-  border: 1.25em solid brown;
+  border-color: brown;
 }
 .red-velvet-cake-buttermilk .matte {
-  border: 1.25em solid black;
+  border-color: black;
 }
 .red-velvet-cake.matte,
 .red-velvet-cake-cocoa .matte {
-  border: 1.25em solid white;
+  border-color: white;
 }
 .red-velvet-cake-vinegar .matte {
-  border: 1.25em solid red;
+  border-color: red;
 }
