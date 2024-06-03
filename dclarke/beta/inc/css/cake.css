@@ -312,7 +312,7 @@ a {
   font-weight: 500;
   text-decoration: none;
 }
-i < *:not(h1, h3, h5, p, li) {
+*:not(h1, h3, h5, p, li) > i {
   font-style: normal;
 }
 
