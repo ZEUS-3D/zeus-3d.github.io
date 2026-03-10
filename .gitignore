@@ -1,6 +1,9 @@
 # Folder archives
-_*
-_*/
+
+_ *
+_version*
+
+.DS_Store
 
 # Folder config file
 Desktop.ini
