@@ -1,7 +1,8 @@
 # Folder archives
 
+README.txt
 _ *
-_version*
+*_gitignore*
 
 .DS_Store
 
