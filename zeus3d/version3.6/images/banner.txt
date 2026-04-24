@@ -1,0 +1,145 @@
+*dk banner
+c
+c *.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*
+c *.* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *.*
+c *.*                                                               *.*
+c *.*                  @@@@@@@@@@@@@@@                              *.*
+c *.*              @@@@ @ @ @ @ @ @ @ @@@@                          *.*
+c *.*           @@@@ @ @ @ @ @ @ @ @ @ @ @@@            ZZZZZZZZZZ  *.*
+c *.*         @@@ @ @ @ @ @ @ @ @ @ @@@@@@@@@@         Z      ZZZ   *.*
+c *.*       @@ @ @ @ @ @ @ @ @ @@@@@@@@@@@@@@@@@             ZZZ    *.*
+c *.*      @@ @ @ @ @ @ @ @@@@@@@@@@@@ @@ @ @ @ @@          ZZZ     *.*
+c *.*     @@ @ @ @ @ @ @@@@@@@@@ @ @ @@ @ @@ @@ @@@        ZZZ      *.*
+c *.*     @ @ @ @ @ @@@@@@@@@ @@  @ @ @  @ @ @ @ @@@      ZZZ       *.*
+c *.*    @ @ @ @ @@@@@@@@@ @@  @@ @@ @ @ @ @ @ @@ @@     ZZZ        *.*
+c *.*    @@ @ @@@@@@@@@ @@  @ @  @ @ @ @@@ @@ @@ @@@    ZZZ      Z  *.*
+c *.*   @@@ @@@@@@@@ @@ @ @  @ @ @ @@@ @@@ @@ @ @@@    ZZZZZZZZZZ   *.*
+c *.*   @ @@@@@@@  @ @ @ @ @ @ @@@  @@          @@                  *.*
+c *.*   @@@@@@@ @@ @ @ @ @@@ @@@                @      EEEEEEEEEEE  *.*
+c *.*  @@@@@ @ @  @@@ @@ @@                     @       EEE     EE  *.*
+c *.*  @@@@ @ @@@  @@ @@        @@@@@@@@     @@@@@      EEE      E  *.*
+c *.*  @@@ @ @ @@ @@@@@                 @   @   @       EEE    E    *.*
+c *.*  @@@ @ @@ @@@@ @           @@@@@@     @@@@        EEEEEEEE    *.*
+c *.*  @@@@@@ @@@ @@ @          @@ @@  @     @@@        EEE    E    *.*
+c *.*  @@@ @@@ @@  @ @            @@@@       @ @        EEE      E  *.*
+c *.*  @@@@@ @     @ @                        @         EEE     EE  *.*
+c *.*   @@@@ @ @@@ @ @                        @        EEEEEEEEEEE  *.*
+c *.*   @@@@ @  @@ @  @                   @    @                    *.*
+c *.*   @ @@@ @  @  @@@@@                @@@   @@      UUU     UUU  *.*
+c *.*    @@@@@ @@ @@@   @ @ @           @@      @     U   U   U   U *.*
+c *.*    @@@@@       @@@@ @ @ @        @  @@@@@@          UU UU     *.*
+c *.*    @ @@@    @@@@  @ @ @ @ @ @   @ @@@@@@@            UUU      *.*
+c *.*   @@@@         @@@@ @ @ @ @ @ @@ @@@@ @ @@           UUU      *.*
+c *.*     @@       @@@  @ @ @ @ @ @  @@@@ @@ @@            UUU      *.*
+c *.*      @         @@@@  @@ @ @ @ @@@@ @@@@@@@           UUU      *.*
+c *.*      @        @@  @ @  @@ @@@ @@@@ @ @@@ @           UUU      *.*
+c *.*      @         @@@@ @ @ @ @@@@@@@  @@ @ @ @         UUUUU     *.*
+c *.*      @            @ @ @ @ @ @@@@ @ @ @@@@ @                   *.*
+c *.*      @            @ @ @ @  @ @ @ @ @ @ @ @ @     SSSSSSSSSS   *.*
+c *.*      @             @ @ @ @ @ @ @ @ @ @ @ @ @@     SS       S  *.*
+c *.*     @                @ @ @ @ @ @ @ @ @ @ @ @@      SS         *.*
+c *.*     @               @@ @ @ @ @ @ @ @ @ @ @ @ @      SS        *.*
+c *.*     @        @     @@@ @ @ @ @ @ @ @ @ @ @ @@@       SS       *.*
+c *.*    @         @       @@@ @ @ @ @ @ @ @ @@ @ @@@     SSS       *.*
+c *.*  @@@         @       @@  @@@ @ @ @ @ @ @@ @@ @@    SSS        *.*
+c *.*@@  @         @          @@@@ @@@ @@@ @@ @ @@ @@   SSS      S  *.*
+c *.*   @@         @           @@ @@ @@@@ @@ @@ @@ @   SSSSSSSSSS   *.*
+c *.*   @@@        @              @@@ @@@@@ @@ @@@                  *.*
+c *.*     @@@       @                         @                     *.*
+c *.*       @@     @                           @@@@@@@@             *.*
+c *.*         @     @                                  @@@@@@@@@@@@@*.*
+c *.*              @                                                *.*
+c *.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*.*
+c * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+c
+c
+c               ZEUS-3D, VERSION 3.6, RELEASE OF 15JUN16
+c
+c                           David Alan Clarke
+c               Institute for Computational Astrophysics
+c             Saint Mary's University, Halifax, NS B3H 3C3
+c                     http://www.ica.smu.ca/zeus3d
+c
+c  ___________________________________________________________________
+c |                                                                   |
+c |                          ACKNOWLEDGEMENTS                         |
+c |                                                                   |
+c |    The first ZEUS-code was developed by Michael Norman and DAC    |
+c |      in 1986 at the NCSA, University of Illinois, Urbana, IL.     |
+c |                                                                   |
+c |    The MHD Riemann solver in *gp riemann was kindly provided by   |
+c |        Tom Jones, University of Minnesota, Minneapolis, MN.       |
+c |                                                                   |
+c |               PSPLOT modules were kindly provided by              |
+c |  Kevin Kohler, Nova Southeastern University, Fort Lauderdale, FL. |
+c |                                                                   |
+c |    Routines used in this code based on routines and algorithms    |
+c |    developed by others are acknowledged in the routine headers.   |
+c |                                                                   |
+c |    Financial support from the Natural Sciences and Engineering    |
+c |   Research Council (NSERC) of Canada is gratefully acknowledged.  |
+c |___________________________________________________________________|
+c
+c  ___________________________________________________________________
+c |                                                                   |
+c |                      IMPLICIT USER AGREEMENT                      |
+c |                                                                   |
+c |  In what follows, "the author" refers to David A. Clarke (ICA),   |
+c |  "this software" refers to ZEUS-3D, version 3.6 (dzeus36) and any |
+c |  descendant released by the author, and "the user" refers to      |
+c |  anyone using this software.  All users are assumed to have read, |
+c |  understood, and agreed to the following conditions of use:       |
+c |                                                                   |
+c |  1. Distribution of this software shall remain the purview of the |
+c |     author.  A user is free to share this software with students  |
+c |     and co-workers, but requests from those not working directly  |
+c |     with the user should be directed to www.ica.smu.ca/zeus3d.    |
+c |                                                                   |
+c |  2. This software shall be used exclusively for education,        |
+c |     research, non-profit, and non-military purposes.  Specific    |
+c |     written permission from the author must be obtained before    |
+c |     any commercial application of this software is undertaken.    |
+c |                                                                   |
+c |  3. The banner and history decks (first two modules of dzeus36)   |
+c |     shall remain with this software and any descendent developed  |
+c |     from and still based substantially upon this software.        |
+c |                                                                   |
+c |  4. The names of the institutions with which the author is or     |
+c |     has been affiliated shall not be used to publicise any data   |
+c |     and/or results generated by this software.  All findings and  |
+c |     their interpretations are the opinions of the user and do not |
+c |     necessarily reflect those of the author nor the institutions  |
+c |     with which the author is or has been affiliated.              |
+c |                                                                   |
+c |  The author makes no representations about the suitability of     |
+c |  this software for any purpose.  Subject to the above conditions, |
+c |  this software and the accompanying manuals are provided "as is"  |
+c |  without expressed or implied warranty.                           |
+c |                                                                   |
+c |  Inquiries about this software, constructive criticism, bug       |
+c |  reports, etc. may be sent to the author at dclarke@ap.smu.ca.    |
+c |___________________________________________________________________|
+c
+c  ___________________________________________________________________
+c |                                                                   |
+c |               CITATIONS AND ACKNOWLEDGEMENT OF USE                |
+c |                                                                   |
+c |  The appropriate citations for dzeus36 and its descendants are:   |
+c |                                                                   |
+c |    Clarke, D. A., 1996, ApJ, 457, 291.                            |
+c |    Clarke, D. A., 2010, ApJS, 187, 119.                           |
+c |                                                                   |
+c |  It is requested that any publication reporting results performed |
+c |  by dzeus36 or any of its derivatives include the following:      |
+c |                                                                   |
+c |  "Use of ZEUS-3D, developed by D. A. Clarke at the Institute for  |
+c |  Computational Astrophysics (ICA, www.ica.smu.ca) with financial  |
+c |  support from the Natural Sciences and Engineering Research       |
+c |  Council of Canada (NSERC), is hereby acknowledged."              |
+c |                                                                   |
+c |  If length is an issue, the following is also acceptable:         |
+c |                                                                   |
+c |  "Use of ZEUS-3D, developed by D. A. Clarke at the ICA (www.ica   |
+c |  .smu.ca) with financial support from NSERC, is acknowledged."    |
+c |___________________________________________________________________|
+c

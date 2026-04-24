@@ -1,0 +1,31 @@
+README for .../gallery/2dprob/problem.04/figures/fig3
+
+The .s and .mac files in .../gallery/test2d/problem.03 are set up so that they will compile directly from the public zeus directory where it is assumed HDF is not available.  Thus, pl2con is set as though the 2-D contour plots for Figure 3 are made "on the fly".
+
+In reality, I generated total HDF dumps with dthdf=0.1 which was frequent enough to find after-the-fact the time where the delv=1.5 run started going non-linear (at t=2.6).  I then used the corresponding HDF files from the other runs (delv = 0.5, 0.75, ..., 2.25) to generate the plots in the figure.  For that, I used the following input file for PLOTZ13:
+
+ $iocon    infile='zhto001kq'                                          $
+ $initcon                                                              $
+ $pl1con                                                               $
+ $pl2con   pl2dir=3, pl2mm1=0, pl2ccol=0, pl2clin1=2
+         , x2pl2mn=-0.15, x2pl2mx=0.15, pl2yl=1, pl2xl=0, numcl1=5
+         , pl2ftr=0, pl2leg=0
+         , pl2min1=-20.7, pl2max1=-17.4
+         , pl2sca1= 'wn'                                               $
+
+To get the few contours (5) to essentially delineate the shear layer, values for "pl2min1" and "pl2max1" were taken to be 82% and 69% of the actual minimum value for "wn".  These are tabulated below:
+
+	   actual	used in plot
+2M=	min	max	min	max
+--------------------------------------
+0.50	-12.5	0.006	-10.3	- 8.6
+0.75	-18.9	0.007	-15.5	-13.0
+1.00	-25.2	0.007	-20.7	-17.4
+1.25	-31.7	0.004	-26.0	-22.0
+1.50	-38.8	0.008	-31.8	-26.8
+1.75	-46.7	0.007	-38.3	-32.2
+2.00	-52.2	0.006	-42.8	-36.0
+2.25	-56.2	0.003	-46.1	-38.8
+
+
+DAC, May 2016

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="https://www.google.com/schemas/sitemap/0.9"
+  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="https://www.google.com/schemas/sitemap/0.9
+                      https://www.google.com/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+    <loc>https://zeus3d.ca</loc>
+    <lastmod>2026-01-01</lastmod>
+    <priority>1</priority>
+  </url>
+  
+  <url>
+    <loc>https://zeus3d.ca/dclarke/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <priority>1</priority>
+  </url>
+  
+  <url>
+    <loc>https://zeus3d.ca/zeus3d/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://zeus3d.ca/zeus3d/version3.6/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <priority>0.4</priority>
+  </url>
+  
+  <url>
+    <loc>https://zeus3d.ca/azeus/</loc>
+    <lastmod>2023-01-01</lastmod>
+    <priority>0.4</priority>
+  </url>
+
+  <url>
+    <loc>https://periwinkle.blue/robots.txt</loc>
+    <lastmod>2023-01-01</lastmod>
+    <priority>0.1</priority>
+  </url>
+
+</urlset>

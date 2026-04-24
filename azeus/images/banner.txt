@@ -1,0 +1,165 @@
+*dk banner
+cBEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN
+c
+c               _/       _/_/_/_/_/  _/_/_/_/_/              _/_/_/
+c             _/_/      _/     _/   _/      _/             _/     _/
+c           _/  _/          __/    _/          _/     _/  _/
+c         _/    _/        _/      _/_/_/_/    _/     _/    _/_/_/
+c       _/_/_/_/_/     __/       _/          _/     _/          _/
+c     _/        _/   _/     _/  _/      _/   _/   _/_/  _/     _/
+c   _/          _/ _/_/_/_/_/  _/_/_/_/_/     _/_/  _/   _/_/_/
+c%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%@%***%@%@%@%9%@%@%@%@%@%@%@%@%@%@%@%@%
+c@%@%@%@%@%@%@aa%@%@%@%@%@%@%@%@%@" xx  "*@*"   "*%@%@%@%@%@%@%@%@%@%@%@
+c%@%@%@%@%@%@aaaa%@%@%@%@%@%@%@%@  ==xx:  `  .    "%@%@%@%@%@%@%@%@%@%@%
+c@%@%@%@%@%@aa%aaa%@%@%@%@%9"" ""0::   \8:  :..    `9@%@%@%@%@%@%@%@%@%@
+c%@%@%@%@%@aa%@%aaa%@%@%9"":::|0*:@9||P""::.  ::: =x:9@%@%@%@%@%@%@%@%@%
+c@%@%@%@%@aa%@%@%aaa%@7::"9xx7 .:%$:. :.|x9:._"96:..   "9@%@%@%@%@%@%@%@
+c%@%@%@%@aa%@%@%@%aaC"9@%7:x_.:x7:**::xxmm=::*9=*966..  `"9%@%@%@%@%@%@%
+c@%@%@%@aa%@%@%@%@%99@6m7:****"':0:/@m9@99@%@:::;/@%==*=oo::*@%@%@%@%@%@
+c%@%@%@aa%@%@%@%@%9%%7:0mm:,^-._..00;.*997"::$|"'*:*,_"7m_.*:"@%@%@%@%@%
+c@%@%@aaaaaaaaaaa99*.%@%900:m@%9099@%9*:.     .   ,79@m,"*m;.:%@%@%@%@%@
+c%@%@aa%@%@%@%@%@9_.9@zzzZ79@%9:.79@%0x:..       .:9@999:.Sm=.@%@%@%@%@%
+c@%@aa%@%@%@%@%@997@90".oo9@%9:.9o.:S0::..        |09@%9mm.)":%@%@%@%@%@
+c%@aa%@%@%@%@%@99'm0999:_"*99:/@990000:. . . .    .*0%@%@%9(\.@%@%@%@%@%
+caaaaa%@%@%@%@%7_"*:6m""*.00:7@70000000::.         .*@%@%@x9:*%@%@%@%@%@
+c@%@%@%%@%@%@%@%@_.9@%(_-:_m7@%9000o.:0990::.:. . .  %@%@x99:\@%@%@%@%@%
+c@%@%@%@%@%@%@%9%@m0@%@*6*9@%@90oo0mmmm6606::..:.:.  9%@%@%@:.)@%@%@%@%@
+c%@%@%@%@%@%@%99"%@_67*:*.9%@999%%@70Z@%@%@:. ,9@%@9=.@%@%@%:..%@%@%@%@%
+c@%@%@%@%@%@%@999@%@%9'_m7%@%99@%@%@%m%99%@0. :@%m_@|)%@%@%@0( 9%@%@%@%@
+c%@%@%@%@%@%@%C|@9*'*.**9o9%@::.*xx%xx%99XX0..**..**:x99@%999*:*@%@%@%@%
+c@%@%@%@%@%@%99\9nm:. :.:m%@%::::::**::|9997. .. . . :::0S::\n:.%@%@%@%@
+c%@%@%@%@%@%@999x9@9*:.:/9@%@%Sx:_.:.:om7*S9:.:. . . X;\,"6o**::@%@%@%@%
+c@%@%@%@%@%@%@99o7:Lmx:=@%9999@E00L:.:X,om9|:  :..::.9:=*U966mn.|@%@%@%@
+c%@%@%@%@%@%@99&&&uC**":&@SSXxoEEXXx="*@&@%@mm9::..:j3Lx_*&S***"J%@%@%@%
+c@%@%@%@%@%@%9&&@%&Z**&@%@K.xC.:**.::n:.uJ@%*SL..:=xx*F*&m*&n:L.%@%@%@%@
+c%@%@%@%@%@%99&&*96o::|%@**m_"(,::%:.X0:m%@mm%@mn_::*:Jx0o0`@&@o@%@%@%@%
+c@%@%@%@%@%@99E*&J&|.:J@%S:"&&mL.=x%"*$%:""""*@%@mn.::(_._.*-*Z@%@%@%@%@
+c%@%@%@%@%@%9&.P*S:.xI@%@mmxi"*&&x_/@7**""":::(&@9ZJ:..&**&m_xJ%@%@%@%@%
+c@%@%@%@%@%@99&&SmumX@%6m@%@oLn&*"*.*._:. .:.:::.::". .36m`*S`J@%@%@%@%@
+c%@%@%@%@%@99&&&S::J@%@m7**9&9*_oo:o::=_.:..x:. .. *u".JXJUF\,@%@%@%@%@%
+c@%@%@%@%@%9m@%@:x:9%@%9**:`&LJ&xXm,..6mm,(.0**":..:`%.\@9&X:K%@%@%@%@%@
+c%@%@%@%@%@L9@%@6L_9@%@mX:.|)0X&&&&&U"**"*96*3-_. . .*_xJ9`),n@%@%@%@%@%
+c@%@%@%@%@f*79@%@&&@%@%@9&n:&&&&&(,"*5*:.:`&\|&&&m&-::&&&9:.Z@%@%@%@%@%@
+c%@%@%@%@F:%@%@%@%@%@%@%@&&&:0&m&NS=,**&=.,&&mmnu.X..x&&&&FJ@%@%@%@%@%@%
+c@%@%@%@%|:;9&%&%@%@%@%@%(&&.:"&&&&2*&mvvm&&"&*&\."vu&@%BEI@%@%@%@%@%@%@
+c%@%@%@%*mv:*0"*9%@7@%@%@%@9&&00&mXm&&&*`9&.'&mnm=7I/m*9C` `"*@%@%@%@%@%
+c@%@*" . @%m99mom*=9%@%@%@%@%@\6&&&"&@%mmm@%@&&LXm&m*n*&m_ .`"*`%@%@%@%@
+c%' . ..:"**@Lm&%::X0x99@%@%@%@%@9&&*"**9&&&6mm`&&*&m,:*9@6, .::`%@%@%@%
+c.:.... .::"=09%0ox0xo00099@%@%@%@%9&&mmm@C&@%m:@%n "*m, "*%, .  `%@%@%@
+c\.:... .:::oooXXXxoxoxo0*X0%UU%@%@%@%@%@%9*m*m9@%@%, `\o,:"*, .  :%@%@%
+c@\. .. .::":***XXXX:***oxoxo0XX99%@%@%99*'::::*%x@(%\.. `( .*,   .\%@%@
+c%@. . . .:..:""****9XXxoxoxoxoX0X9%@%@"o*"oxxo`*99@*9,:.. "S,`_  ..9%@%
+c@%\. . . .:..::::.:::*SXxoxoxoxXox97*":.:. .:. ."*6%.9:.. .:. *. . :@%@
+c%@%\.::.x::..::.:::..:.0**0X0*'`**X0xo::. .. .  :oX$:`$ .  .:. \ . `%@%
+c@%@%:...:..x:.. :.:..:..  .:.""::.:.|Xo::,. . . ..:"9(:$.  .:. |:.  @%@
+c%@%@%:.. ..:x:...:::..:.. . :.:..:...Xx::. .    . ..:9:\:.      :.  %@%
+c@%@%@%\:.::.:. . ... . .   :.. :.  .:xo:..: .  .  . .$: $     .  .  DAC
+c   \_          \_ \_\_\_\_\_  \_\_\_\_\_     \_\_  \_   \_\_\_
+c     \_        \_   \_     \_  \_      \_   \_   \_\_  \_     \_
+c       \_\_\_\_\_     \__       \_          \_     \_          \_
+c         \_    \_        \_      \_\_\_\_    \_     \_    \_\_\_
+c           \_  \_          \__    \_          \_     \_  \_
+c             \_\_      \_     \_   \_      \_             \_     \_
+c               \_       \_\_\_\_\_  \_\_\_\_\_              \_\_\_
+c
+cBEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN BEGIN
+c
+c
+c       A D A P T I V E   Z O N E   E u L E R I A N   S C H E M E
+c
+c                AZEuS, Version 2.0, release of ddMMMyy
+c
+c                           David Alan Clarke
+c                          Halifax, NS, Canada
+c                  https://zeus3d.ca/dclarke/azeus
+c
+c  ___________________________________________________________________
+c |                                                                   |
+c |                             DEDICATION                            |
+c |                                                                   |
+c |  For my mother, Sheila Mantell.  Even though she never understood |
+c |  what I did nor why I was doing it, she'd often call after me as  |
+c |  I was leaving her apartment: "Give my love to your algorithm!"   |
+c |___________________________________________________________________|
+c
+c  ___________________________________________________________________
+c |                                                                   |
+c |                          ACKNOWLEDGEMENTS                         |
+c |                                                                   |
+c |  The first ZEUS-code was developed by Michael Norman and DAC in   |
+c |  1986 at the NCSA, University of Illinois, Urbana, IL.            |
+c |                                                                   |
+c |  PSPLOT modules were kindly provided by the late Kevin Kohler,    |
+c |  formerly of Nova Southeastern University, Fort Lauderdale, FL.   |
+c |                                                                   |
+c |  Routines used in this code based on routines and algorithms      |
+c |  developed by others are acknowledged in the routine headers.     |
+c |                                                                   |
+c |  Financial support from the Natural Sciences and Engineering      |
+c |  Research Council (NSERC) of Canada and the academic freedom      |
+c |  provided by Saint Mary's University are gratefully acknowledged. |
+c |___________________________________________________________________|
+c
+c  ___________________________________________________________________
+c |                                                                   |
+c |                      IMPLICIT USER AGREEMENT                      |
+c |                                                                   |
+c |  In what follows, "the author" refers to David Clarke of Halifax, |
+c |  NS, "this software" refers to AZEuS, version 2.0 (azeus20) and   |
+c |  any descendent released by the author, and "the user" refers to  |
+c |  anyone using this software.  All users are assumed to have read, |
+c |  understood, and agreed to the following conditions of use:       |
+c |                                                                   |
+c |  1. Distribution of this software shall remain the purview of the |
+c |     author.  A user is free to share this software with students  |
+c |     and co-workers, but requests from those not working with the  |
+c |     user should be directed to www.ap.smu.ca/~dclarke/azeus.      |
+c |                                                                   |
+c |  2. This software shall be used exclusively for education,        |
+c |     research, non-profit, and non-military purposes.  Specific    |
+c |     written permission from the author must be obtained before    |
+c |     any commercial application of this software is undertaken.    |
+c |                                                                   |
+c |  3. The banner and history decks (first two modules of azeus20)   |
+c |     shall remain with this software and any descendent developed  |
+c |     from and still based substantially upon this software.        |
+c |                                                                   |
+c |  4. The names of the institutions with which the author is or     |
+c |     has been affiliated shall not be used to publicise any data   |
+c |     and/or results generated by this software.  All findings and  |
+c |     their interpretations are the opinions of the user and do not |
+c |     necessarily reflect those of the author nor the institutions  |
+c |     with which the author is or has been affiliated.              |
+c |                                                                   |
+c |  The author makes no representations about the suitability of     |
+c |  this software for any purpose.  Subject to the above conditions, |
+c |  this software and the accompanying manuals are provided "as is"  |
+c |  without expressed or implied warranty.                           |
+c |                                                                   |
+c |  Inquiries about this software, constructive criticism, bug       |
+c |  reports, etc. may be sent to the author at david.clarke@smu.ca.  |
+c |___________________________________________________________________|
+c
+c  ___________________________________________________________________
+c |                                                                   |
+c |               CITATIONS AND ACKNOWLEDGEMENT OF USE                |
+c |                                                                   |
+c |  Suitable citations for azeus20 and its descendants include:      |
+c |                                                                   |
+c |    Ramsey, J. P., Clarke, D. A., & Men'shchikov, A. B., 2012,     |
+c |      ApJS, v. 199, p. 13.                                         |
+c |                                                                   |
+c |  as well as its website: https://zeus3d.ca/dclarke/azeus      |
+c |                                                                   |
+c |  Additional background on the zeus algorithms may be found in:    |
+c |                                                                   |
+c |    Clarke, D. A., 2010, ApJS, v. 187, p. 119.                     |
+c |    Clarke, D. A., 1996, ApJ, v. 457, p. 291.                      |
+c |                                                                   |
+c |  It is requested that any publication reporting results performed |
+c |  by azeus20 or any of its derivatives include the following:      |
+c |                                                                   |
+c |  "Use of AZEuS, developed by D. A. Clarke with financial support  |
+c |  from NSERC of Canada, is acknowledged."                          |
+c |___________________________________________________________________|
+c

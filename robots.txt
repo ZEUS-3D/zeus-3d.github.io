@@ -1,0 +1,22 @@
+User-agent: *
+Disallow: */_mm/
+Disallow: */_notes/
+Disallow: */_baks/
+Disallow: */MMWIP/
+
+User-agent: googlebot
+Disallow: *.csi
+
+
+# Sitemap #
+
+Sitemap: /zeus3d.ca.sitemap.xml
+
+
+# AI #
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /

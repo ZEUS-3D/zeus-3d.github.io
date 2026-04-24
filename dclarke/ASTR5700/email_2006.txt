@@ -1,0 +1,11 @@
+Trevor Byrne       tbyrne@ap.smu.ca              <a href=mailto:tbyrne@ap.smu.ca>Trevor Byrne</a>
+Catherine Lovekin  clovekin@ap.smu.ca            <a href=mailto:clovekin@ap.smu.ca>Catherine Lovekin</a>
+Nick MacDonald     nick_macdonald2002@yahoo.com  <a href=mailto:nick_macdonald2002@yahoo.com>Nick MacDonald</a>
+Jon Ramsey         jramsey@ap.smu.ca             <a href=mailto:jramsey@ap.smu.ca>Jon Ramsey</a>
+Patrick Rogers     p_rogers03@hotmail.com        <a href=mailto:p_rogers03@hotmail.com>Patrick Rogers</a>
+Patrick Puppel     p.puppel@gmx.de               <a href=mailto:p.puppel@gmx.de>Patrick Puppel</a>
+Joel Tanner        jtanner@ap.smu.ca             <a href=mailto:jtanner@ap.smu.ca>Joel Tanner</a>
+
+tbyrne@ap.smu.ca,clovekin@ap.smu.ca,nick_macdonald2002@yahoo.com,jramsey@ap.smu.ca,p_rogers03@hotmail.com,p.puppel@gmx.de,jtanner@ap.smu.ca
+
+"tbyrne@ap.smu.ca" "clovekin@ap.smu.ca" "nick_macdonald2002@yahoo.com" "jramsey@ap.smu.ca" "p_rogers03@hotmail.com" "p.puppel@gmx.de" "jtanner@ap.smu.ca"

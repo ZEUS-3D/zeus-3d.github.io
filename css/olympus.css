@@ -1,0 +1,346 @@
+/*
+ *
+ *
+ * - root
+ * - reset
+ *
+ * 1 page
+ * 2 grid
+ * 3 gutter
+ * 4 font
+ * 5 text
+ *
+ *
+ * 8 color
+ * 9 media
+ *
+ * - @queries
+ *
+ *
+ */
+
+
+
+/* ROOT */
+
+:root {
+
+  --fixed-page-width: 1050px;
+  --fixed-image-height: 300px;
+
+  --gutter: 0.7em;
+
+}
+
+
+
+/* RESET */
+
+* {
+  box-sizing: border-box;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+html {
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+       -o-text-size-adjust: 100%;
+  font-size: 100%;
+  size: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+/* 1 PAGE */
+
+header,
+footer {
+  position: relative;
+  width: 100%;
+}
+body > div,
+header > div,
+footer > div {
+  padding: auto;
+  margin: auto;
+}
+body > div {
+  width: var(--fixed-page-width);
+  max-width: var(--fixed-page-width);
+}
+header > div {
+  width: var(--fixed-page-width);
+  max-width: var(--fixed-page-width);
+}
+footer > div {
+  width: 1152px;
+  max-width: 1200px;
+}
+
+/* Fix footer to bottom. (Also see: - QUERIES) */
+footer {
+  position: fixed;
+  bottom: 0;
+  padding-bottom: 1em;
+  margin-bottom: 0;
+}
+
+/* Set height for three images. */
+body.olympus > div.trio img {
+  height: var(--fixed-image-height);
+  max-height: var(--fixed-image-height);
+}
+
+/* And set padding to match image height. */
+div.absolute-space-cadet {
+  padding-top: var(--fixed-image-height);
+}
+
+/* Set separate widths for three images and set content width to match. */
+div.grid-left div.absolute-space-cadet,
+body.olympus > div.trio > .grid-left img {
+  width: 232px;
+}
+div.grid-center div.absolute-space-cadet,
+body.olympus > div.trio > div.grid-center img {
+  width: 216px;
+}
+div.grid-right div.absolute-space-cadet,
+body.olympus > div.trio > div.grid-right img {
+  width: 240px;
+}
+
+
+
+/* 2 GRID */
+
+div.grid-left {
+  grid-area: left;
+}
+div.grid-right {
+  grid-area: right;
+}
+div.grid-center {
+  grid-area: center;
+}
+
+div.trio {
+  grid-template-areas:
+    'left center right';
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.grid {
+  align-content: start;
+  display: inline-grid;
+}
+
+
+
+/* 3 GUTTER */
+
+header {
+  padding-top: 5em;
+  padding-bottom: 4em;
+}
+header > div {
+  padding-top: 0.6em;
+  padding-bottom: 0;
+  padding-right: 0.6em;
+  padding-left: 0em;
+}
+
+footer > div,
+div.grid {
+  padding: var(--gutter);
+}
+div.grid-left {
+  margin-right: var(--gutter);
+}
+div.grid-right {
+  margin-left: var(--gutter);
+}
+
+body.olympus > div.olympus-grid {
+  display: grid;
+  height: 100%;
+  margin: var(--gutter) auto;
+  text-align: center;
+}
+
+body.olympus > div.trio > div {
+  margin: auto;
+}
+
+div.trio h3 {
+  margin-top: var(--gutter);
+}
+
+
+
+/* 4 FONT */
+
+body {
+  font-family: sans-serif;
+  /* -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+       -o-text-size-adjust: 100%; */
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+  /* text-shadow: 1.5px 1.5px 1px rgba(0,0,0,0.3); */
+}
+p {
+  font-weight: normal;
+}
+
+a {
+  color:#3131D6;
+  text-decoration:none;
+}
+a:hover {
+  color:#FF0000;
+}
+
+
+/* 5 TEXT */
+
+.text-center {
+  text-align: center;
+}
+
+
+
+/* 8 COLOR */
+
+body {
+  background-color: white;
+  color: black;
+}
+
+header > div,
+footer > div,
+body.olympus > div.trio > div {
+  background-color: rgba(255, 255, 255, 0.76);
+  border-radius: 5px;
+}
+
+
+
+/* 9 MEDIA */
+
+body.olympus {
+  background-attachment: fixed;
+  background-image: url("../images/MtOlympus.jpg");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body.olympus > div.trio > div {
+  text-align: left;
+}
+body.olympus > div.trio img {
+  position: absolute;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+body.olympus > div.trio img.hover:hover {
+  opacity: 0;
+}
+body.olympus > div.trio img:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+
+
+/* - QUERIES */
+
+@media only screen
+and ( max-height: 720px ) {
+
+  /* Fix footer to bottom. (Edit: 2 PAGE) */
+  footer {
+    position: relative;
+    bottom: auto;
+    padding-bottom: auto;
+    margin-bottom: auto;
+  }
+
+}
+
+@media only screen
+and ( max-width: 1200px ) {
+
+  footer > div {
+    width: 100%;
+  }
+
+}
+
+@media only screen
+and ( max-width: 1050px ) {
+
+  header > div,
+  body > div {
+    width: 100%;
+    max-width: 100%;
+  }
+
+}
+
+@media only screen
+and ( max-width: 840px ) {
+
+  body.olympus > div.olympus-grid {
+    grid-gap: var(--gutter);
+  }
+
+  div.trio {
+    grid-template-areas:
+      'left center'
+      'null right';
+    grid-template-columns: 1fr 1fr;
+  }
+
+  footer {
+    position: relative;
+    bottom: auto;
+    padding-bottom: auto;
+    margin-bottom: auto;
+  }
+
+}
+
+@media only screen
+and ( max-width: 600px ) {
+
+  div.trio {
+    grid-template-areas:
+      'left'
+      'center'
+      'right';
+    grid-template-columns: 1fr;
+  }
+
+}

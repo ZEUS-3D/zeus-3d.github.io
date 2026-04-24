@@ -1,0 +1,67 @@
+**--+----1----+----2----+----3----+--+----3----+----2----+----1----+----
+**                                                                    **
+******************  CONDITIONAL COMPILATION SWITCHES  ******************
+**                                                                    **
+**  1) symmetry axes:  ISYM, JSYM, KSYM
+**
+*define   KSYM
+**
+**  2) geometry:  XYZ, or ZRP, or RTP
+**
+*define   XYZ 
+**
+**  3) physics:  AGING, GRAV, ISO, MHD, POLYTROPE, PSGRAV, RADIATION,
+**               TWOFLUID
+**
+*define   MHD
+**
+**  4) data output modes:  CORKS, DISP, HDF, PIX, PLT1D, PLT2D, RADIO, 
+**                         TIMESL
+**
+*define   PLT1D, PLT2D, PIX, TIMESL
+**
+**  5) other:  DEBUG, FASTCMOC, HSMOC, MOC, NOMOC, RIEMANN, VECTORISE
+**
+*define FASTCMOC
+**                                                                    **
+*************************  MODULE NAME ALIASES  ************************
+**                                                                    **
+**  The modules "BNDYUPDATE", "SPECIAL", "SPECIALSRC", "SPECIALTRN",
+**  "FINISH", "PROBLEM", PROBLEMRESTART", "USERSOURCE", and "USERDUMP" 
+**  are slots available for user-developed subroutines.
+**
+*alias    BNDYUPDATE       empty
+*alias    EXTENDGRID       empty
+*alias    GRAVITY          empty
+*alias    SPECIAL          empty 
+*alias    SOURCE           srcstep
+*alias    SPECIALSRC       empty 
+*alias    TRANSPORT        trnsprt
+*alias    SPECIALTRN       empty
+*alias    NEWTIMESTEP      newdt
+*alias    NEWGRID          empty
+*alias    FINISH           empty
+**
+*alias    PROBLEM          blast
+*alias    ATMOSPHERE       empty
+*alias    PROBLEMRESTART   empty
+*alias    USERSOURCE       empty
+*alias    ARTIFICIALVISC   viscous
+*alias    DIFFUSION        empty
+*alias    USERDUMP         empty 
+**                                                                    **
+************************  ERROR CRITERIA ALIASES  **********************
+**                                                                    **
+*alias    GRAVITYERROR     1.0e-6
+*alias    GRIDERROR        1.0e-6
+*alias    PDVCOOLERROR     1.0e-6
+*alias    NEWVGERROR       1.0e-10
+*alias    RADIATIONERROR   1.0e-6
+**                                                                    **
+***********************  ITERATION LIMITS ALIASES  *********************
+**                                                                    **
+*alias    GRAVITYITER      600
+*alias    GRIDITER         20
+*alias    PDVCOOLITER      20
+*alias    NEWVGITER        20
+*alias    RADIATIONITER    20

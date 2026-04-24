@@ -1,0 +1,11 @@
+README for zeus3d.ca/zeus3d/version3.6/gallery/3dprob/problem.01
+
+This is the Sedov blast wave test, exemplifying the difference between solutions using the internal and total energy equations, and answering the critiques of ZEUS in Tasker et al (2008, MNRAS, 390, 1265).
+
+The assets for this page (images and animations) include images borrowed from the version 3.5 site (Figs. 1 and 2) as well as images and mp4s that I created when I redid the Sedov blast for version 3.6 in May of 2016 before launching the 3.6 site (Figs. 3 and 4).  At the time of this writing, the 200^3 simulation is in:
+
+.../zeus/zeus3d/version3.6/test_probs/3d/sedov/xyz.3D/trnvrsn=1/high/webpage/qcon=0, 
+
+which took 6h 14m on my laptop (skolio).
+
+DAC, 5/16; updated 3/26
