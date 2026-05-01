@@ -1,0 +1,192 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>PHYSICS 4380</TITLE>
+
+<style type="text/css">
+<!--
+  .style01 { font-family: Verdana, Arial, Helvetica, sans-serif; }
+  .style02 { font-size: 32px; font-weight: bold; }
+  .style03 { font-family: Arial, Helvetica, sans-serif; font-size: 18px; }
+  .style04 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 32px; }
+  .style05 { font-family: Arial, Helvetica, sans-serif; font-size: 16px; }
+  .style06 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24px; color: #660099; }
+  .style07 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24px; color: #1e90ff; }
+  .style08 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24px; color: #009933; }
+  .style09 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24px; color: #FF4500; }
+  .style10 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24px; color: #0000ff; }
+  .style11 { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 24px; color: #FF0000; }
+  .style12 { font-family: Arial, Helvetica, sans-serif; font-size: 22px; }
+  .style13 { font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+  .style14 { font-family: Arial, Helvetica, sans-serif; font-size: 6px; }
+-->
+</style>
+
+<!--Following is an on-line library needed for mouse-over sound.-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+</HEAD>
+
+<BODY bgcolor="99BBFF">
+
+<!--Following is needed for mouse-over sound.-->
+
+<audio preload="auto" id="aquarius">
+  <source src="documents/aquarius.mp3"></source>
+  <source src="documents/aquarius.ogg"></source>
+</audio>
+
+<div align="center">
+
+<table cellspacing="0" cellpadding="5" border="0">
+  <tr valign="top">
+    <td width="200"><img class="aquarius" title="It's the 5th Dimension!!" src="images/aquarius.jpg" width="200" border="0"> </td>
+    <td width="600" align="center">
+      <p class="style01" style="margin-top: 0;"><span class="style02">PHYSICS 4380</span></p>
+      <p class="style04" style="margin-bottom: 0;">Fluid Dynamics</p>
+      <p class="style04" style="margin-top: 0; margin-bottom: 0;">Saint Mary's University, Halifax, NS</p>
+      <p class="style04" style="margin-top: 0;">Winter, 2021 </p>
+    </td>
+    <td width="200"></td>
+  </tr>
+</table>
+
+<p style="margin-bottom: 0; font-size: 6pt">&nbsp;</p>
+<p class="style12" style="margin-top: 0;">
+  The departmental <a href="https://zeus3d.ca/dclarke/smuap_curriculum/documents/PHYS4380.pdf" target="_blank">curriculum page for PHYS 4380</a>
+</p>
+
+<p style="margin-bottom: 0;">&nbsp;</p>
+<table>
+  <tr>
+    <td>
+      <table border="2" cellpadding="10" cellspacing="0" bordercolor="#AA0000">
+        <tr>
+          <td valign="center" width="150">
+            <div align="center" class="style03">
+              <a href="honourroll.html" title="honourroll.html">Honour roll</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="120"><p>&nbsp;</p></td> 
+    <td>
+      <table border="2" cellpadding="10" cellspacing="0" bordercolor="#AA0000">
+        <tr>
+          <td valign="center" width="150">
+            <div align="center" class="style03">
+              <a href="hists.html">Grade summary</a>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+<p style="margin-bottom: 0;">&nbsp;</p>
+<p class="style11" style="margin-top: 0; margin-bottom: 0;">
+  announcements (as of apr. 22, 2021)
+</p>
+<table width="900" border="2" cellpadding="10" cellspacing="0" bordercolor="#FF0000">
+  <tr valign="top">
+
+    <!--<td width="880">
+      <p class="style03" style="margin-top: 0;">
+        Welcome to PHYS 4380!
+      </p>
+      <p class="style03" style="margin-top: 0;">
+        Our first class will be on Thursday, January 7 at 8:30 am (egad!) via <i>Zoom</i>, where our first order of business will be to change our class time!!  I'll send out the <i>Zoom</i> invitation the night before using the e-mail address the registrar has for you, so please check your e-mail. 
+      </p>
+      <p class="style03" style="margin-top: 0;">
+        There is nothing for you to do to prepare for this course, other than setting your alarm on the 7th for a time when it is still dark outside!  There isn't even a text to purchase; all will be provided!
+      </p>
+      <p class="style03" style="margin-top: 0;">
+        Have a good rest of your break, everyone, and I'll see you on the 7th!
+      </p>
+    </td>-->
+
+    <!--<td width="880">
+      <p class="style03" style="margin-top: 0;">
+        Welcome to PHYS 4380!
+      </p>
+      <p class="style03" style="margin-top: 0;">
+        Classes are now in session, and the full course web page can be accessed below.  Please check there for the latest announcements as well as all the relevant course links and documents.
+      </p>
+    </td>-->
+
+    <!--<td width="880">
+      <p class="style03" style="margin-top: 0;">
+        During the final exam, the link to the main course webpage will be disabled, and the exam itself shall be e-mailed to you.  Please let me know by return e-mail as soon as you get it.  You can use the <a href="https://zoom.us/j/99561810276?pwd=UkJtdHAyUkl6Yk52b1pVT0xjdnR0QT09" target="_blank"> class <i>Zoom</i> link </a> (password aQuarius) to reach me in case you have any questions of <i>clarity</i> during the exam.
+      </p>
+      <p class="style03" style="margin-top: 0;">
+        As promised, I am making available the <a href="documents/instr_FS.pdf" target="_blank">exam instructions and accompanying formula sheets</a> before the exam starts so that you can review them ahead of time, if you like, and to familiarise yourself with the formulae you will have available.
+      </p> 
+    </td>-->
+
+    <!--<td width="880">
+      <p class="style03" style="margin-top: 0;">
+        Welcome to PHYS 4380!
+      </p>
+      <p class="style03" style="margin-top: 0;">
+        Classes have ended. I'm currently grading the final exam and last assignment and will post my final grades to the registrar once that is complete.  In the meantime, I've reopened the course' main page in case there are any materials students would still like to see or download.  I'll close down the page for the year within the week.
+      </p>
+    </td>-->
+
+    <td width="880">
+      <p class="style03" style="margin-top: 0;">
+        I have graded the exams and final assignments and submitted the grades; all materials have been returned to the students.  I'll leave the course web page open until tomorrow (April 23) afternoon in case there is anything students still wish to download.
+      </p>
+      <p class="style03" style="margin-top: 0;">
+        Have a great summer everyone, and the best of luck in your future!
+      </p>
+    </td>
+
+  </tr>
+</table>
+
+<p style="margin-bottom: 0;">&nbsp;</p>
+<p class="style09" style="margin-top: 0; margin-bottom: 0;">instructor</p>
+<table width="" border="1" cellpadding="10" cellspacing="0" bordercolor="#ff4500">
+  <tr valign="top">
+    <td valign="top">
+      <div align="center" class="style05">Prof. David Clarke </div>
+    </td>
+    <td valign="top">
+      <div align="center" class="style05">
+        <a href="mailto:david.clarke@smu.ca">david.clarke &quot;at&quot; smu.ca</a>
+      </div>
+    </td>
+    <td valign="top">
+      <div align="center" class="style05">AT 311</div>
+    </td>
+    <td valign="top">
+      <div align="center" class="style05">420-5830</div>
+    </td>
+  </tr>
+</table>
+
+<p style="margin-bottom: 0;">&nbsp;</p>
+<p class="style12" style="margin-top: 0;">
+  <!--The full course web page will open soon.-->
+  <a href="./open/open.html">Enter the full course page here.</a>
+  <!--The course web page is now closed.-->
+</p>
+<p style="margin-bottom: 0;">&nbsp;</p>
+
+</div>
+
+<!--Following is needed for mouse-over sound.-->
+
+<script>
+  var audio = $("#aquarius")[0];
+  $("img.aquarius").mouseenter(function() { audio.play(); });
+  $("img.aquarius").mouseleave(function() { audio.pause(); });
+</script>
+
+</BODY>
+
+</HTML>
