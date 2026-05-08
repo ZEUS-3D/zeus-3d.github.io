@@ -1,0 +1,138 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>ZEUS-3D</title>
+<link rel="stylesheet" type="text/css" href="http://www.smu.ca/commonresources/default.css" />
+<link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon" />
+<style type="text/css">
+<!--
+a:visited {
+  color: #0066CC;
+}
+.style1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 37px;
+}
+.style5 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 21px;
+}
+.style7 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+.style8 {
+  font-family: Symbol;
+  font-style: italic;
+}
+.style12 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.style13 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  color: #000000;
+}
+-->
+</style>
+</head>
+
+<body bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0" background="../../../images/bg.jpg">
+<table width="900" cellspacing="5">
+  <tr valign="top">
+    <td><img src="../../../images/zeus-banner2.gif" width="900" height="133" border="0"></td>
+  </tr>
+  <tr valign="top">
+    <td><img src="../../../images/divider.gif" alt="" width="900" height="10" border="0"></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center"><em><span class="style1">3-D test problem 1: Sedov blast wave </span></em></div></td>
+  </tr>
+  <tr valign="top">
+    <td height="24"><img src="../../../images/divider.gif" alt="" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="900" cellspacing="5" cellpadding="0" border="0">
+  
+  <tr valign="top">
+    <td width="900" height="167"><p class="style5" style="margin-top: 0;">The Sedov blast wave (Sedov, L. I., 1959, <em>Similarity and dimensional methods in mechanics</em>, New York:Academic Press) is a spherically-symmetric problem <em>ZEUS-3D</em> can do in 1-D  spherical polar coordinates, or in 3-D Cartesian coordinates.&nbsp; It tests both isotropy and energy conservation of the code.</p>
+      <p class="style5" style="margin-bottom: 0;">The blast wave is set up by adding energy to a small sphere at the origin of an otherwise quiescent, uniform medium.&nbsp; The test presented here is without magnetic fields so that it may examine the isotropy of the code in Cartesian coordinates.&nbsp; An MHD blast wave is included in the 2-D gallery.</p></td>
+  </tr>
+  <tr valign="top">
+    <td height="20"><img src="../../../images/divider.gif" alt="" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="900" cellspacing="0" cellpadding="10" border="0">
+  <tr valign="top">
+    <td height="659"><table width="880" cellspacing="0" cellpadding="0" border="0">
+      <tr valign="top">
+        <td height="95" colspan="2"><span class="style7" style="margin-top: 0; margin-bottom: 0">A 200<sup>3</sup> uniform Cartesian grid is initialised in 0 &lt; <em>x,y,z</em> &lt; 5  with uniform density (<span class="style8">r </span>= 1) and pressure (<em>p</em> = 10<sup>-5</sup>).&nbsp; Reflecting boundary conditions are imposed on the <em>x</em> = 0, <em>y</em> = 0, and <em>z</em> = 0 planes (both reflecting boundary conditions and octal symmetry are maintained to machine accuracy by dzeus35).&nbsp;At <em>t </em>= 0, 1.25 <span class="style12">x</span> 10<sup>4</sup> units of energy are placed in the eighth-sphere of radius 0.0875 centred at the origin and resolved with 3.5 zones along each axis, 2 zones along the diagonal. This creates a pressure jump of <span class="style7" style="margin-top: 0; margin-bottom: 0">10<sup>12</sup></span> at <em>t</em> = 0, and thus poses an extreme test, even for double precision. </span></td>
+        </tr>
+      <tr valign="top">
+        <td width="621" height="533"><table width="621" cellspacing="10" cellpadding="0" border="0">
+          <tr valign="top">
+            <td width="601"><img src="./images/sedov1_000.gif" width="600" height="268"></td>
+          </tr>
+          <tr valign="top">
+            <td><table width="600" cellspacing="0" cellpadding="0" border="0">
+              <tr valign="top">
+                <td width="300"><img src="./images/hist_tote.gif" width="300" height="235"></td>
+                <td width="300"><span style="margin-top: 0; margin-bottom: 0;"><img src="./images/hist_inte.gif" width="300" height="235"></span></td>
+              </tr>
+            </table>            </td>
+          </tr>
+        </table>        </td>
+        <td width="259"><table width="270" cellspacing="0" cellpadding="0" border="0">
+          <tr valign="top">
+            <td><p class="style7">Plots to the left show radial profiles of density and pressure at <em>t </em>= 0.1 when the internal (crosses) and total (circles) energy equation is used (See Sec. 3.1 of the notes <em>What is ZEUS-3D?</em> for a discussion on internal <em>vs</em>. total energy equations).&nbsp; Lines are the results from a  spherically symmetric run with 5,000 uniform radial zones, and are taken as the &quot;analytical&quot; solution (actual analytical solutions from Sedov at <em>t</em> = 0.1 are: <em>r</em><sub>sph</sub>= 4.59,<span class="style8"> r</span><sub>max</sub>= 4.00, and <em>p</em><sub>max</sub>= 252).&nbsp;Results with the total energy equation are perfectly acceptable, whereas results using the internal energy equation show a marked disagreement with the analytical solution. </p>
+              <p class="style7" style="margin-bottom: 0;">Plots to the left show the total energy (solid), internal energy (dotted) and kinetic energy (dashed) integrated over the grid as a function of time when the total (far left) and internal (near left) energy equation is solved.&nbsp; While the total energy equation conserves total energy to machine accuracy, the internal energy equation loses a third of the total energy over the course of the simulation.&nbsp; The accompanying loss of internal and kinetic energies explains the disagreements in the density and pressure profiles above and why the blast front reaches only 4.35 by<em> t</em> = 0.1, 5% less than the analytical value.</p></td>
+          </tr>
+        </table>
+        </td>
+      </tr>
+      
+    </table>
+    </td>
+  </tr>
+</table>
+<table width="900" cellspacing="10" cellpadding="0" border="0">
+  <tr valign="top">
+    <td><img src="./images/sedov2.xv.gif" width="880" height="235"></td>
+  </tr>
+  <tr valign="top">
+    <td height="270"><p class="style7" style="margin-top: 0;">Images above show a density slice through the blast front using <em>a</em>) the internal energy equation with qcon = 2 at <em>t </em>= 0.1; <em>b</em>) the total energy equation with qcon = 0 at<em> t </em>= 0.1, <em>c</em>) the total energy equation with qcon = 0 at <em>t </em>= 0.01, and <em>d</em>) the total energy equation with qcon = 2 at <em>t </em>= 0.01.&nbsp; This series shows that the aspherical contours, particularly near the centre, are a residual of the quadratic artificial viscosity (<span class="style7" style="margin-top: 0; margin-bottom: 0">controlled by the <em>ZEUS-3D</em> parameter qcon) </span>designed to stabilise shocks.&nbsp; In particular, the asymmetry has nothing to do with whether energy is conserved, since energy is conserved to machine accuracy in panels <em>c</em> and <em>d</em> regardless of qcon.&nbsp; The much smaller asymmetries  in panels <em>b</em> and <em>c</em> result from the anisotropic grid viscous effects tripped when the initial overpressured region is resolved with 3.5 zones along the axes, but only 2 zones diagonal to them.&nbsp; </p>
+      <p class="style7">Despite its intended purpose, quadratic viscosity is not actually needed here to stabilise the shock.&nbsp; Because the time step is governed by the enormous temperature at the core, the shock takes many time steps to cross each zone, and grid dissipation is sufficient to stabilise it.&nbsp; Further,  the total energy equation solution is virtually independent of qcon, and one can safely use qcon = 0.&nbsp; On the other hand, the internal energy equation solution is quite sensitive to qcon (<span class="style7" style="margin-bottom: 0"><em>r</em><sub>sph</sub>,<span class="style8"> r</span><sub>max</sub>,  <em>p</em><sub>max</sub>, but not shock stability)</span>, with qcon = 2 (the default) being optimal.&nbsp;The toll, however, is the loss of isotropy.</p>
+      <p class="style7" style="margin-bottom: 0;"><em>ZEUS-3D</em> uses the diagonal form of the artificial viscosity (von Neumann &amp; Richtmyer, 1950, J. Appl. Phys., 21, 232), and this is known to behave anisotropically, particularly for problems such as this.&nbsp; A full tensor treatment of the artificial viscosity (<em>e.g</em>., Richtmyer &amp; Morton, 1967, <em>Difference methods for initial value problems</em>, New York:Wiley), if installed, would improve the isotropy of the Cartesian solution.</p></td>
+  </tr>
+</table>
+<table width="900" cellspacing="10" cellpadding="0" border="0">
+  <tr valign="top">
+    <td width="490" height="25">&nbsp;</td>
+    <td width="120" rowspan="3"><a href="./animations/zRD_ba.mpg" title="density" target="_blank"><img src="./images/D_thumb.gif" width="120" height="120" border="0"></a></td>
+    <td width="120" rowspan="3"><a href="./animations/zRE1ba.mpg" title="pressure" target="_blank"><img src="./images/P_thumb.gif" width="120" height="120" border="0"></a></td>
+    <td width="120" rowspan="3"><a href="./animations/zRVVba.mpg" title="velocity divergence" target="_blank"><img src="./images/VVthumb.gif" width="120" height="120" border="0"></a></td>
+  </tr>
+  <tr valign="top">
+    <td><table width="496" cellspacing="0" cellpadding="0" border="0">
+      <tr valign="top">
+        <td width="496"><span class="style7">Images to the right link to MPEG animations of density (left), pressure (centre), and velocity divergence (right) integrated along the line of sight through the 200<sup>3</sup> total energy equation simulation of the Sedov blast wave. </span></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr valign="top">
+    <td height="37">&nbsp;</td>
+  </tr>
+</table>
+<table width="900" cellspacing="0" cellpadding="5" border="0">
+  <tr valign="top">
+    <td width="900" height="39"><img src="../../../images/divider.gif" alt="" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="913" border="3" cellpadding="10" cellspacing="0" bordercolor="#990000">
+  <tr valign="top">
+    <td width="885"><span class="style13"><strong>Conclusions</strong>: With an initial pressure jump of <em>twelve orders of magnitude</em> and the absence of perturbations to break the octal symmetry, this must be regarded as a severe test which, by itself, cannot rule out the use of the internal energy equation for all applications.&nbsp;The advantage of  the internal energy equation and why it remains an option in dzeus35 is it guarantees a positive-definite pressure so long as the CFL condition is obeyed.&nbsp; In many applications, pressure jumps are rarely over a few orders of magnitude in which case the internal energy equation can normally conserve total energy to within a percent.&nbsp; While the code is designed to deal with negative pressures that arise when the total energy equation is used (as it turns out, the Sedov problem generated none), the need for positive-definite pressures may still trump the need for strict conservation of mechanical energy, and the internal energy equation remains in the code as a viable alternative.</span></td>
+  </tr>
+</table>
+</body>
+</html>

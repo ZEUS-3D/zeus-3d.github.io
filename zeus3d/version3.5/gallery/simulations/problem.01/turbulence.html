@@ -1,0 +1,422 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>ZEUS-3D</title>
+<link rel="stylesheet" type="text/css" href="http://www.smu.ca/commonresources/default.css" />
+<link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon" />
+<style type="text/css">
+<!--
+a:visited {
+  color: #0066CC;
+}
+.style1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 37px;
+}
+.style8 {font-size: 16px; font-style: italic; font-weight: bold; }
+.style10 {font-size: 16px; font-weight: bold; }
+.style14 {font-size: 15px}
+.style16 {font-size: 13px}
+.style17 {font-size: 13px; font-family: Geneva, Arial, Helvetica, sans-serif; }
+.style18 {font-family: Geneva, Arial, Helvetica, sans-serif}
+.style19 {
+  font-family: Symbol;
+  font-style: italic;
+}
+.style20 {font-family: Symbol}
+.style21 {
+  font-size: 21px;
+  font-family: "Times New Roman", Times, serif;
+}
+.style23 {font-size: 21px}
+.style38 {font-family: Arial, Helvetica, sans-serif}
+.style39 {font-family: "Times New Roman", Times, serif}
+-->
+</style>
+</head>
+
+<body bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0" background="../../../images/bg.jpg">
+<table width="900" border="0" cellpadding="0" cellspacing="5">
+  <tr valign="top">
+    <td width="900"><img src="../../../images/zeus-banner2.gif" width="900" height="133" border="0"></td>
+  </tr>
+  <tr valign="top">
+    <td height="24"><img src="../../../images/divider.gif" width="900" height="10" border="0"></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center"><em><span class="style1">Simulation Gallery: Super-Alfv&eacute;nic turbulence </span></em></div></td>
+  </tr>
+  <tr valign="top">
+    <td height="24"><img src="../../../images/divider.gif" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="912" cellspacing="5" cellpadding="0" border="0">
+  <tr valign="top">
+    <td width="902" height="203"><p class="style21" style="margin-top: 0;">Super-Alfv&eacute;nic turbulence (<em>v<sub>rms</sub></em>/<em>a<sub>rms</sub></em>&gt;1) is a difficult task for even the most sophisticated MHD algorithms. Padoan &amp; Nordlund (1999) successfully simulate super-Alfv&eacute;nic turbulence with a staggered-mesh scheme.&nbsp; Collins &amp; Norman (<em>pr. comm.</em>, 2008) and Klein (<em>pr. comm.</em>, 2008) find mixed results with  zone-centred Godunov schemes, where split schemes seem to have more success than unsplit schemes. However, Stone (<em>pr. comm.</em>, 2009) claims  his unsplit ATHENA code can do <span class="style21" style="margin-top: 0; margin-bottom: 0;">super-Alfv&eacute;nic turbulence  without problem, though this is questioned by Klein (<em>pr. comm.</em>, 2009)</span>.&nbsp; Regardless, the paucity of literature  on this subject at the time of this writing is an indicator of its complexity and controversy. </p>
+      <p class="style21" style="margin-bottom: 0;">The <em>Consistent Method of Characteristics</em> (<em>CMoC</em>) algorithm in <span class="style38">ZEUS-3D</span> is capable of performing super<span class="style21" style="margin-top: 0; margin-bottom: 0;">-Alfv&eacute;nic turbulence</span> simulations; indeed it was designed for it.&nbsp; Here, I compare the results of the three   <em>MoC</em>-based schemes in <span class="style38">ZEUS-3D <span class="style39">(<em>MoC</em>, Stone &amp; Norman, 1992, ApJS, 80, 791; <em>HSMoC</em>, Hawley &amp; Stone, 1995, JCP, 205, 509; and <em>CMoC</em>, Clarke 1996, ApJ, 457, 291)</span></span>, demonstrating the numerical difficulties that can arise. &nbsp;The cause of these difficulties and why <em>CMoC</em> works are discussed in the document <em><a href="/zeus3d.ca/zeus3d/version3.6/documents/whatisps/whatisps.pdf" target="_blank"><span class="style23">What is planar splitting?</span></a></em></p></td>
+  </tr>
+  <tr valign="top">
+    <td height="24"><img src="../../../images/divider.gif" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="907" cellspacing="5">
+  
+  <tr valign="top">
+    <td width="541" height="453"><table width="528" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="top">
+        <td width="79" height="26" valign="top"><div align="center"></div></td>
+        <td width="100" valign="top"><div align="center" class="style8">low-k</div></td>
+        <td width="15" valign="top"><div align="center"></div></td>
+        <td width="100" valign="top"><div align="center" class="style8">mid-k</div></td>
+        <td width="16" valign="top"><div align="center"></div></td>
+        <td width="100" valign="top"><div align="center" class="style8">high-k</div></td>
+        <td width="16" valign="top"><div align="center"></div></td>
+        <td width="102" valign="top"><div align="center" class="style8">all-k</div></td>
+      </tr>
+      <tr valign="top">
+        <td height="15" valign="top"><div align="center"></div>
+          <div align="center"></div>          <div align="center" class="style10"></div></td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_moc_low.mpg"><img src="./images/zRB_moc_low.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_moc_mid.mpg"><img src="./images/zRB_moc_mid.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_moc_high.mpg"><img src="./images/zRB_moc_high.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_moc_all.mpg"><img src="./images/zRB_moc_all.gif" width="100" height="100" border="0"></a></td>
+      </tr>
+      <tr valign="top">
+        <td valign="top"><div align="center"><span class="style10">MoC</span></div></td>
+      </tr>
+      
+      <tr valign="top">
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/ztp_moc_low.pdf" target="_blank">history file </a></div></td>
+        <td valign="top"><div align="center"><span class="style14"><span class="style16"><span class="style18"></span></span></span></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/ztp_moc_mid.pdf" target="_blank">history file</a> </div></td>
+        <td valign="top"><div align="center"><span class="style14"><span class="style16"><span class="style18"></span></span></span></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/ztp_moc_high.pdf" target="_blank">history file</a> </div></td>
+        <td valign="top"><div align="center"><span class="style14"><span class="style16"><span class="style18"></span></span></span></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/ztp_moc_all.pdf" target="_blank">history file </a></div></td>
+      </tr>
+      <tr valign="top">
+        <td height="25" valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/zsp_moc_low.pdf" target="_blank">spectra</a></div></td>
+        <td valign="top"><div align="center"><span class="style14"><span class="style16"><span class="style18"></span></span></span></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/zsp_moc_mid.pdf" target="_blank">spectra</a></div></td>
+        <td valign="top"><div align="center"><span class="style14"><span class="style16"><span class="style18"></span></span></span></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/zsp_moc_high.pdf" target="_blank">spectra</a></div></td>
+        <td valign="top"><div align="center"><span class="style14"><span class="style16"><span class="style18"></span></span></span></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/zsp_moc_all.pdf" target="_blank">spectra</a></div></td>
+      </tr>
+      <tr valign="top">
+        <td height="15" valign="top"><div align="center"></div></td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_hsmoc_low.mpg"><img src="./images/zRB_hsmoc_low.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_hsmoc_mid.mpg"><img src="./images/zRB_hsmoc_mid.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_hsmoc_high.mpg"><img src="./images/zRB_hsmoc_high.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_hsmoc_all.mpg"><img src="./images/zRB_hsmoc_all.gif" width="100" height="100" border="0"></a></td>
+      </tr>
+      <tr valign="top">
+        <td valign="top"><div align="center" class="style10">HSMoC</div></td>
+      </tr>
+      <tr valign="top">
+        <td valign="top"><div align="center"><span class="style18"><span class="style16"></span></span></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_hsmoc_low.pdf" target="_blank"><span class="style17">history file </span></a></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_hsmoc_mid.pdf" target="_blank"><span class="style17">history file </span></a></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_hsmoc_high.pdf" target="_blank"><span class="style17">history file </span></a></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_hsmoc_all.pdf" target="_blank"><span class="style17">history file </span></a></div></td>
+      </tr>
+      <tr valign="top">
+        <td height="25" valign="top"><div align="center"><span class="style18"><span class="style16"></span></span></div></td>
+        <td valign="top"><div align="center"><span class="style17"><a href="./documents/zsp_hsmoc_low.pdf" target="_blank">spectra</a></span></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><span class="style17"><a href="./documents/zsp_hsmoc_mid.pdf" target="_blank">spectra</a></span></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><span class="style17"><a href="./documents/zsp_hsmoc_high.pdf" target="_blank">spectra</a></span></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><span class="style17"><a href="./documents/zsp_hsmoc_all.pdf" target="_blank">spectra</a></span></div></td>
+      </tr>
+      <tr valign="top">
+        <td height="15" valign="top"><div align="center"></div></td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_cmoc_low.mpg"><img src="./images/zRB_cmoc_low.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_cmoc_mid.mpg"><img src="./images/zRB_cmoc_mid.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_cmoc_high.mpg"><img src="./images/zRB_cmoc_high.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRB_cmoc_all.mpg"><img src="./images/zRB_cmoc_all.gif" width="100" height="100" border="0"></a></td>
+      </tr>
+      <tr valign="top">
+        <td valign="top"><div align="center" class="style10">CMoC</div></td>
+      </tr>
+      <tr valign="top">
+        <td valign="top"><div align="center"><span class="style18"><span class="style16"></span></span></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_cmoc_low.pdf" target="_blank"><span class="style17">history file </span></a></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_cmoc_mid.pdf" target="_blank"><span class="style17">history file </span></a></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_cmoc_high.pdf" target="_blank"><span class="style17">history file </span></a></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_cmoc_all.pdf" target="_blank"><span class="style17">history file </span></a></div></td>
+      </tr>
+      <tr valign="top">
+        <td height="26" valign="top"><div align="center"><span class="style18"><span class="style16"></span></span></div></td>
+        <td valign="top"><div align="center"><span class="style17"><a href="./documents/zsp_cmoc_low.pdf" target="_blank">spectra</a></span></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><span class="style17"><a href="./documents/zsp_cmoc_mid.pdf" target="_blank">spectra</a></span></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><span class="style17"><a href="./documents/zsp_cmoc_high.pdf" target="_blank">spectra</a></span></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><span class="style17"><a href="./documents/zsp_cmoc_all.pdf" target="_blank">spectra</a></span></div></td>
+      </tr>
+    </table>    </td>
+    <td width="345"><table width="348" cellspacing="3" cellpadding="5" border="0">
+      <tr valign="top">
+        <td width="332" height="464"><p style="margin-top: 0; margin-bottom: 0;">The images in the table are all line-of-sight integrations of the magnetic pressure (B<sup>2</sup>/2) at the final epochs of 64<sup>3</sup> simulations of isothermal, super-Alfv&eacute;nic turbulence using the three MHD algorithms available in ZEUS-3D.&nbsp; Initially, </p>
+          <p style="margin-top: 0;"><span class="style20"><em>r </em>=</span>1, <em>v<sub>rms</sub>= </em>5<em>, </em><em>c<sub>s</sub> </em>= 0.1,<em> B<sub>x</sub></em> = 10<sup>-7</sup> (in units where <span class="style19">m</span><sub>0</sub> =1).&nbsp;Kinetic energy is added to maintain <em>v<sub>rms</sub>= </em>1<em>. </em></p>
+          <p>Turbulence is initialised and driven in specified ranges of the wave-number, <em>k</em> (box length/wavelength), with the minimum wavelength being 2 zones.&nbsp; Thus, for a 64<sup>3 </sup>simulation, 1&lt;k&lt;32.&nbsp;The column headings,<em> low-,</em> <em>mid-, high-</em>, and <em>all-k </em>correspond  to 1&lt;<em>k</em>&lt;4, 3<em>&lt;k</em>&lt;4, 3&lt;<em>k</em>&lt;32, and 1&lt;<em>k</em>&lt;32. </p>
+          <p>The MoC is subject to an &quot;explosive-field instability&quot; which is entirely numerical in origin and can drive a <span class="style20">b </span>= 10<sup>10</sup> flow to a <span class="style20">b </span>~ 1 flow within a single time step and  in a single zone. This can  evacuate the zone enough to drive the  Alfv&eacute;n time step to zero,  bringing the simualtion to a halt.&nbsp; Only the<em> low-k</em> MoC simulation  reached <em> t</em> =40.&nbsp; The<em> mid-k</em> simulation stopped at<em> t</em> =20, and the <em>high-</em> and <em>all-k</em> MoC simulations stopped at  <em>t</em> ~3.</p>
+<p style="margin-bottom: 0;"> HSMoC and CMoC do not suffer from this instability, and all simulations  are run to <em>t</em> =40 (two sound-crossing times, 2<em>t<sub>s</sub></em>).&nbsp; The driving <em>k</em> ranges are apparent in the final images.&nbsp; In the<em> low-k </em>simulations, only the longest wavelengths are driven, causing excessive organisation of the fluid including large voids.&nbsp; Indeed, at 32<sup>3</sup> resolution, the fluid becomes organised entirely on a single plane!&nbsp; The <em>mid-k</em> simulations remain filled, and the magnetic field is organised into &quot;filaments&quot;, as has been documented elsewhere.&nbsp; Finally, the <em>high-</em> and <em>all-k</em> simulations show the effects of driving  turbulence at the smallest wavelengths, with very fine details appearing in the magnetic field structure. Click on any image for an animation. </p></td>
+      </tr>
+    </table>    </td>
+  </tr>
+  <tr valign="top">
+    <td height="138" colspan="2"><table width="894" cellspacing="0" cellpadding="5" border="0">
+      <tr valign="top">
+        <td width="884" height="136"><p style="margin-top: 0; margin-bottom: 0;">While there may be little to distinguish  the HSMoC and CMoC simulations in the images above, interesting differences in how the magnetic field grows in time can be found in the history files.&nbsp; When the highest wavenumbers are driven, CMoC exhibits magnetic field &quot;eruptions&quot; over the course of the simulation which can raise the mean magnetic energy density two orders of magnitude higher than the corresponding HSMoC simulation in which the &quot;eruptions&quot; are  absent.&nbsp;&quot;Eruptions&quot; are distinct from the MoC &quot;explosions&quot; in that they do not cause excessive decline in the local Alfv&eacute;n speed, they happen over significant periods of time (many tens of time steps), and seem to have a physical basis.&nbsp; In particular, they are associated with localities of strong and sustained shear layers that stretch, and thus strengthen, a weak magnetic field.&nbsp; The shear layer is eventually disrupted but, in some cases, not before the field has grown by an order of magnitude or more.&nbsp; These &quot;eruptions&quot; enrich the rest of the grid with enhanced magnetic field and  continue until the overall field strength is sufficient to resist being stretched further.&nbsp; Why they don't appear in  HSMoC simulations remains a mystery, and may  point to numerical problems in CMoC or physical shortcomings in HSMoC.&nbsp; They are absent in both the low-k and mid-k CMoC simulations, and their prominence in high-k CMoC simulations drops as the resolution is increased. </p>          </td>
+      </tr>
+    </table>    </td>
+  </tr>
+</table>
+<table width="900" cellspacing="5">
+  <tr valign="top">
+    <td height="12" colspan="2">&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td width="528" height="163" rowspan="3"><table width="528" border="0" cellpadding="0" cellspacing="0">
+      <tr valign="top">
+        <td width="79" height="26" valign="top"><div align="center"></div></td>
+        <td width="100" valign="top"><div align="center" class="style8">low-k</div></td>
+        <td width="15" valign="top"><div align="center"></div></td>
+        <td width="100" valign="top"><div align="center" class="style8">mid-k</div></td>
+        <td width="16" valign="top"><div align="center"></div></td>
+        <td width="100" valign="top"><div align="center" class="style8">high-k</div></td>
+        <td width="16" valign="top"><div align="center"></div></td>
+        <td width="102" valign="top"><div align="center" class="style8">all-k</div></td>
+      </tr>
+      <tr valign="top">
+        <td height="15" valign="top"><div align="center"></div>
+              <div align="center"></div>
+          <div align="center" class="style10"></div></td>
+        <td rowspan="2" valign="top"><a href="./animations/zRD_cmoc_low.mpg"><img src="./images/zRD_cmoc_low.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRD_cmoc_mid.mpg"><img src="./images/zRD_cmoc_mid.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRD_cmoc_high.mpg"><img src="./images/zRD_cmoc_high.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRD_cmoc_all.mpg"><img src="./images/zRD_cmoc_all.gif" width="100" height="100" border="0"></a></td>
+      </tr>
+      <tr valign="top">
+        <td valign="top"><div align="center"><span class="style10">density</span></div></td>
+      </tr>
+      <tr valign="top">
+        <td valign="top"><div align="center">&nbsp;&nbsp; </div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/ztp_moc_low.pdf" target="_blank"></a></div></td>
+        <td valign="top"><div align="center"><span class="style14"><span class="style16"><span class="style18"></span></span></span></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/ztp_moc_mid.pdf" target="_blank"></a> </div></td>
+        <td valign="top"><div align="center"><span class="style14"><span class="style16"><span class="style18"></span></span></span></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/ztp_moc_high.pdf" target="_blank"></a> </div></td>
+        <td valign="top"><div align="center"><span class="style14"><span class="style16"><span class="style18"></span></span></span></div></td>
+        <td valign="top"><div align="center" class="style17"><a href="./documents/ztp_moc_all.pdf" target="_blank"></a></div></td>
+      </tr>
+      <tr valign="top">
+        <td height="15" valign="top"><div align="center"></div></td>
+        <td rowspan="2" valign="top"><a href="./animations/zRVVcmoc_low.mpg"><img src="./images/zRVVcmoc_low.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRVVcmoc_mid.mpg"><img src="./images/zRVVcmoc_mid.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRVVcmoc_high.mpg"><img src="./images/zRVVcmoc_high.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRVVcmoc_all.mpg"><img src="./images/zRVVcmoc_all.gif" width="100" height="100" border="0"></a></td>
+      </tr>
+      <tr valign="top">
+        <td valign="top"><div align="center" class="style10">div(v)</div></td>
+      </tr>
+      <tr valign="top">
+        <td valign="top"><div align="center"><span class="style18"><span class="style16"></span></span>&nbsp;&nbsp; </div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_hsmoc_low.pdf"></a></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_hsmoc_mid.pdf"></a></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_hsmoc_high.pdf"></a></div></td>
+        <td valign="top"><div align="center"></div></td>
+        <td valign="top"><div align="center"><a href="./documents/ztp_hsmoc_all.pdf" target="_blank"></a></div></td>
+      </tr>
+      <tr valign="top">
+        <td height="15" valign="top"><div align="center"></div></td>
+        <td rowspan="2" valign="top"><a href="./animations/zRW_cmoc_low.mpg"><img src="./images/zRW_cmoc_low.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRW_cmoc_mid.mpg"><img src="./images/zRW_cmoc_mid.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRW_cmoc_high.mpg"><img src="./images/zRW_cmoc_high.gif" width="100" height="100" border="0"></a></td>
+        <td rowspan="2" valign="top">&nbsp;</td>
+        <td rowspan="2" valign="top"><a href="./animations/zRW_cmoc_all.mpg"><img src="./images/zRW_cmoc_all.gif" width="100" height="100" border="0"></a></td>
+      </tr>
+      <tr valign="top">
+        <td valign="top"><div align="center" class="style10">vorticity</div></td>
+      </tr>
+    </table></td>
+    <td width="353" height="86">&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td height="121"><table width="349" cellpadding="5" border="0">
+      <tr valign="top">
+        <td width="335"><span style="margin-top: 0; margin-bottom: 0;">For completeness, the line-of-sight integrations of the density, velocity divergence, and the magnitude of the vorticity (to indicate shear layers where magnetic filaments are being drawn out) for the 64<sup>3</sup> simulations are included here for each of the four driving regimes.&nbsp;Since the HSMoC and CMoC results for these hydrodynamical quantities are very similar, only the CMoC solutions are shown.&nbsp; Click on any image for an animation.</span></td>
+      </tr>
+    </table>    </td>
+  </tr>
+  <tr valign="top">
+    <td height="143">&nbsp;</td>
+  </tr>
+</table>
+<table width="900" cellspacing="5" cellpadding="0" border="0">
+  <tr valign="top">
+    <td height="24"><img src="../../../images/divider.gif" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="900" cellspacing="0" cellpadding="0" border="0">
+  
+  <tr valign="top">
+    <td width="23" height="24" valign="top"><div align="center"></div></td>
+    <td colspan="2" valign="top"><div align="center"><span class="style10">MoC </span></div></td>
+    <td width="23" valign="top"><div align="center"></div></td>
+    <td colspan="2" valign="top"><div align="center"><span class="style10">HSMoC</span></div></td>
+    <td width="22" valign="top"><div align="center"></div></td>
+    <td colspan="2" valign="top"><div align="center"><span class="style10">CMoC</span></div></td>
+    <td width="22" valign="top"><div align="center"></div></td>
+    <td width="200" rowspan="3" valign="top"><table width="197" cellspacing="0" cellpadding="0" border="0">
+        <tr valign="top">
+          <td width="197" height="243"><p style="margin-top: 0;">Images to the left are  the final epoch of 128<sup>3</sup>  simulations driven in the mid-<em>k</em> range (3&lt;<em>k</em>&lt;4) using the three MoC algorithms.&nbsp; Initial conditions and driving mechanism are the same as the 64<sup>3</sup> simulations above.&nbsp;</p>
+            <p><span style="margin-top: 0; margin-bottom: 0">Both the CMoC and HSMoC runs make it to </span><span style="margin-top: 0; margin-bottom: 0"><em>t</em> =40 while the MoC run makes it only to<em> </em></span><span style="margin-top: 0; margin-bottom: 0"><em>t </em>=14.4 where it suffers a magnetic explosion.&nbsp;</span></p>
+  <p style="margin-bottom: 0;"><span style="margin-top: 0; margin-bottom: 0">Below are images at<em> t</em> =160 (8<em>t<sub>s</sub></em>) of the same 128<sup>3</sup> turbulence simulation using CMoC.&nbsp; </span><span style="margin-top: 0; margin-bottom: 0">Click on any image for an animation.&nbsp; </span></p>
+  </td>
+        </tr>
+      </table>      <div align="center"></div></td>
+    <td width="13" valign="top"><div align="center"></div></td>
+  </tr>
+  <tr valign="top">
+    <td valign="top">&nbsp;</td>
+    <td colspan="2" valign="top"><a href="./animations/zRB_moc_mid128.mpg"><img src="./images/zRB_moc_mid128.gif" width="200" height="200" border="0"></a></td>
+    <td valign="top">&nbsp;</td>
+    <td colspan="2" valign="top"><a href="./animations/zRB_hsmoc_mid128.mpg"><img src="./images/zRB_hsmoc_mid128.gif" width="200" height="200" border="0"></a></td>
+    <td valign="top">&nbsp;</td>
+    <td colspan="2" valign="top"><a href="./animations/zRB_cmoc_mid128_t40.mpg"><img src="./images/zRB_cmoc_mid128_t40.gif" width="200" height="200" border="0"></a></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+  
+  <tr valign="top">
+    <td height="21" valign="top"><div align="center"></div></td>
+    <td width="101" valign="top"><div align="center"><a href="./documents/ztp_moc_mid128.pdf" target="_blank"><span class="style17">history file</span></a></div></td>
+    <td width="99" valign="top"><div align="center"><a href="./documents/zsp_moc_mid128.pdf" target="_blank"><span class="style17">spectra</span></a></div></td>
+    <td valign="top"><div align="center"></div></td>
+    <td width="99" valign="top"><div align="center"><a href="./documents/ztp_hsmoc_mid128.pdf" target="_blank"><span class="style17">history file</span></a></div></td>
+    <td width="101" valign="top"><div align="center"><a href="./documents/zsp_hsmoc_mid128.pdf" target="_blank"><span class="style17">spectra</span></a></div></td>
+    <td valign="top"><div align="center"></div></td>
+    <td width="100" valign="top"><div align="center"><a href="./documents/ztp_cmoc_mid128_t40.pdf" target="_blank"><span class="style17">history file</span></a></div></td>
+    <td width="100" valign="top"><div align="center"><a href="./documents/zsp_cmoc_mid128_t40.pdf" target="_blank"><span class="style17">spectra</span></a></div></td>
+    <td valign="top"><div align="center"></div></td>
+    <td valign="top"><div align="center"></div></td>
+  </tr>
+</table>
+<table width="899" cellspacing="0" cellpadding="0" border="0">
+  <tr valign="top">
+    <td colspan="9" valign="top">&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td width="21" height="28" valign="top"><div align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div></td>
+    <td width="200" valign="top"><div align="center"><span class="style10">magnetic energy </span></div></td>
+    <td width="21" valign="top"><div align="center"></div></td>
+    <td width="200" valign="top"><div align="center"><span class="style10">density</span></div></td>
+    <td width="22" valign="top"><div align="center"></div></td>
+    <td width="200" valign="top"><div align="center"><span class="style10">div(v)</span></div></td>
+    <td width="22" valign="top"><div align="center"></div></td>
+    <td width="200" valign="top"><div align="center"><span class="style10">vorticity</span></div></td>
+    <td width="13" valign="top"><div align="center"></div></td>
+  </tr>
+  <tr valign="top">
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><a href="./animations/zRB_cmoc_mid128.mpg"><img src="./images/zRB_cmoc_mid128.gif" width="200" height="200" border="0"></a></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><a href="./animations/zRD_cmoc_mid128.mpg"><img src="./images/zRD_cmoc_mid128.gif" width="200" height="200" border="0"></a></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><a href="./animations/zRVVcmoc_mid128.mpg"><img src="./images/zRVVcmoc_mid128.gif" width="200" height="200" border="0"></a></td>
+    <td valign="top">&nbsp;</td>
+    <td valign="top"><a href="./animations/zRW_cmoc_mid128.mpg"><img src="./images/zRW_cmoc_mid128.gif" width="200" height="200" border="0"></a></td>
+    <td valign="top">&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td colspan="9" valign="top">&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td colspan="9" valign="top"><table width="900" cellspacing="5" cellpadding="0" border="0">
+      <tr valign="top">
+        <td height="111"><p style="margin-top: 0;">The <a href="./documents/ztp_cmoc_mid128.pdf" target="_blank">history file</a> to<em> t </em>=160 shows, among other variables, the rms velocities.&nbsp; The rms fluid speed, <span style="margin-top: 0; margin-bottom: 0;"><em>v<sub>rms</sub></em></span>, is initialised at 5 and quickly falls to 1 (where it is driven), the sound speed,  <span style="margin-top: 0; margin-bottom: 0;"><em>c<sub>rms</sub></em></span>, is constant at 0.1 (isothermal gas), while the rms Alfv<span style="margin-top: 0; margin-bottom: 0;">&eacute;</span>n speed, <span style="margin-top: 0; margin-bottom: 0;"><em>a<sub>rms</sub></em></span>, increases exponentially from<em> t</em> ~1 to ~120 until it reaches <span style="margin-top: 0; margin-bottom: 0;"><em>c<sub>rms</sub></em></span> where magnetic growth   saturates.&nbsp; The magnetic energy  increases by three orders of magnitude between 0 &lt; <em>t</em> &lt; 1 during the rapid decline of <span style="margin-top: 0; margin-bottom: 0;"><em>v<sub>rms</sub></em></span>, then by another ten orders of magnitude between 1 &lt;<em> t</em> &lt; 120 (6<span style="margin-top: 0; margin-bottom: 0;"><em>t<sub>s</sub></em></span>), growing 1.7 orders of magnitude per sound crossing time.&nbsp; At <em>t </em>=120, growth halts and the total magnetic energy remains more or less constant through<em> t</em> =160.&nbsp; Thus, the system remains supersonic  and super-Alfv<span style="margin-top: 0; margin-bottom: 0;">&eacute;</span>nic (<em>M = M<span style="margin-top: 0; margin-bottom: 0;"><em><sub>A</sub></em></span></em> = 10), and evolves from <span class="style19">b</span> = 2 x 10<span style="margin-top: 0; margin-bottom: 0;"><sup>13</sup></span> to ~ 2.</p>
+            <p style="margin-bottom: 0;">The <a href="./documents/zsp_cmoc_mid128.pdf" target="_blank">Fourier spectra</a> of the variables at the final epoch show a reasonable inertial regime (power law of -5/3) in 3&lt;k&lt;25, particularly for the density and kinetic energy.</p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr valign="top"></tr>
+</table>
+<table width="900" cellspacing="5" cellpadding="0" border="0">
+  <tr valign="top">
+    <td height="24"><img src="../../../images/divider.gif" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="900" cellspacing="0" cellpadding="0" border="0">
+  <tr valign="top">
+    <td colspan="5"><table width="900" cellspacing="5" cellpadding="0" border="0">
+      <tr valign="top">
+        <td height="56"><span style="margin-top: 0; margin-bottom: 0;">Images below are of 256<sup>3</sup> turbulence simulations at <em>t </em>=40 with the same initial and driving conditions as the 128<sup>3</sup> simulations using CMoC.&nbsp; Click on any image for an animation.&nbsp; The <a href="./documents/zsp_cmoc_mid256.pdf" target="_blank">Fourier spectra</a> of the variables at the final epoch show an inertial regime (power law of -5/3) in 3&lt;k&lt;40, particularly for the density and kinetic energy.&nbsp; The <a href="./documents/ztp_cmoc_mid256.pdf" target="_blank">history file</a> shows the first stages of magnetic growth, before saturation is reached.&nbsp;&nbsp; Click on any image for an animation. </span></td>
+      </tr>
+    </table>    </td>
+  </tr>
+  <tr valign="top">
+    <td width="35" height="22"><div align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div></td>
+    <td width="400"><div align="center"><span class="style10">magnetic energy </span></div></td>
+    <td width="30"><div align="center"></div></td>
+    <td width="400"><div align="center"><span class="style10">density</span></div></td>
+    <td width="35"><div align="center"></div></td>
+  </tr>
+  <tr valign="top">
+    <td>&nbsp;</td>
+    <td><a href="./animations/zRB_cmoc_mid256.mpg"><img src="./images/zRB_cmoc_mid256.gif" width="400" height="401" border="0"></a></td>
+    <td>&nbsp;</td>
+    <td><a href="./animations/zRD_cmoc_mid256.mpg"><img src="./images/zRD_cmoc_mid256.gif" width="400" height="399" border="0"></a></td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td colspan="5">&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td height="24"><div align="center"></div></td>
+    <td><div align="center"><span class="style10">div(v)</span></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"><span class="style10">vorticity</span></div></td>
+    <td><div align="center"></div></td>
+  </tr>
+  <tr valign="top">
+    <td>&nbsp;</td>
+    <td><a href="./animations/zRVVcmoc_mid256.mpg"><img src="./images/zRVVcmoc_mid256.gif" width="400" height="400" border="0"></a></td>
+    <td>&nbsp;</td>
+    <td><a href="./animations/zRW_cmoc_mid256.mpg"><img src="./images/zRW_cmoc_mid256.gif" width="399" height="400" border="0"></a></td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

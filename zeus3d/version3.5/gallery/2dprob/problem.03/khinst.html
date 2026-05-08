@@ -1,0 +1,296 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>ZEUS-3D</title>
+<link rel="stylesheet" type="text/css" href="http://www.smu.ca/commonresources/default.css" />
+<link rel="shortcut icon" href="../../../images/favicon.ico" type="image/x-icon" />
+<style type="text/css">
+<!--
+a:visited {
+  color: #0066CC;
+}
+.style1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 37px;
+}
+.style8 {
+  font-family: Symbol;
+  font-style: italic;
+}
+.style14 {font-family: Symbol}
+.style17 {font-family: "Times New Roman", Times, serif; font-size: 18px; }
+.style18 {font-size: 18px}
+.style23 {font-family: Arial, Helvetica, sans-serif}
+.style24 {font-size: 11px}
+.style25 {font-family: "Times New Roman", Times, serif; font-size: 11px; }
+.style26 {font-family: "Times New Roman", Times, serif}
+.style28 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body bottommargin="0" topmargin="0" leftmargin="0" rightmargin="0" background="../../../images/bg.jpg">
+<table width="900" border="0" cellpadding="0" cellspacing="5">
+  <tr valign="top">
+    <td width="900"><img src="../../../images/zeus-banner2.gif" width="900" height="133" border="0"></td>
+  </tr>
+  <tr valign="top">
+    <td><img src="../../../images/divider.gif" alt="" width="900" height="10" border="0"></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center"><em><span class="style1">2-D test problem 3: The Kelvin-Helmholtz Instability </span></em></div></td>
+  </tr>
+  <tr valign="top">
+    <td height="18"><img src="../../../images/divider.gif" alt="" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="910" cellspacing="5" cellpadding="0" border="0">
+  <tr valign="top">
+    <td height="1176"><table width="900" cellspacing="0" cellpadding="0" border="0">
+      <tr valign="top">
+        <td colspan="3"><span class="style25" style="margin-bottom: 0;"><span class="style17" style="margin-top: 0; margin-bottom: 0;"><strong><em>Linear regime:</em></strong>&nbsp; Two layers of fluid sliding past each other with relative speed 2<em>v</em><sub>0</sub> form a <em>shear layer</em> (Fig. 1) and is subject to the <strong><em>Kelvin-Helmholtz instability</em></strong> for certain ranges of the relative Mach number, 2<em>M</em>, where <em>M</em> = <em>v</em><sub>0</sub>/<em>c</em><sub>s</sub>, and where <em>c</em><sub>s</sub> = </span></span></td>
+      </tr>
+      <tr valign="top">
+        <td height="170" colspan="2"><table width="600" cellspacing="0" cellpadding="0" border="0">
+          <tr valign="top">
+            <td><div align="justify"><span class="style25" style="margin-bottom: 0;"><span class="style17" style="margin-top: 0; margin-bottom: 0;"><span class="style25" style="margin-bottom: 0;"><span class="style17" style="margin-top: 0; margin-bottom: 0;">(<span class="style8">g</span><em>p</em><sub>0</sub>/<span class="style14"><em>r</em></span><sub>0</sub>)<sup>1/2</sup></span></span> is the sound speed.&nbsp; </span><a href="./documents/linear.pdf" target="_blank"><span class="style18">To approach this problem analytically</span></a><span class="style18">, one  examines perturbations to the <em>linearised</em> fluid equations, from which the following conclusions may be drawn:</span></span>
+            </div>
+              <p class="style24" style="margin-top: 0; margin-bottom: 0;">&nbsp;&nbsp; </p>
+              <p align="justify" class="style17" style="margin-top: 0; margin-bottom: 0;">1.&nbsp; For 2<em>M</em> &gt; 2<sup>3/2</sup> ~ 2.83, the shear layer is unconditionally stable to perturbations;</p>
+              <p align="justify" class="style24" style="margin-top: 0; margin-bottom: 0;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+              <p align="justify" class="style17" style="margin-top: 0; margin-bottom: 0;">2.&nbsp;  The shear layer is most unstable for 2<em>M</em> = 3<sup>1/2</sup> ~ 1.73;</p></td>
+          </tr>
+          <tr valign="top">
+            <td><span class="style24">&nbsp;&nbsp;&nbsp; </span></td>
+          </tr>
+          
+        </table>        </td>
+        <td width="300"><table width="300" cellspacing="0" cellpadding="0" border="0">
+          <tr valign="top">
+            <td>&nbsp;</td>
+          </tr>
+          <tr valign="top">
+            <td><div align="center"><img src="./images/shearlayer.gif" width="250" height="105"></div></td>
+          </tr>
+          <tr valign="top">
+            <td>&nbsp;</td>
+          </tr>
+          <tr valign="top">
+            <td><div align="center"><span class="style17" style="margin-top: 0; margin-bottom: 0">Figure 1: A shear layer </span></div></td>
+          </tr>
+          <tr valign="top">
+            <td>&nbsp;</td>
+          </tr>
+        </table>        </td>
+      </tr>
+      <tr valign="top">
+        <td colspan="3"><p class="style17" style="margin-bottom: 0;">3.&nbsp; Where the shear layer is unstable, the growth rate of the perturbation is inversely proportional to its wavelength.</p>
+          <p class="style24" style="margin-top: 0; margin-bottom: 0;"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+          <p align="justify" class="style17" style="margin-top: 0; margin-bottom: 0;">The latter conclusion cannot be true indefinitely; at some point, the effects of viscosity and/or surface tension damp out the perturbations before they can grow.</p>
+          <p align="justify" style="margin-top: 0; margin-bottom: 0;"><span class="style18"> &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+          <p align="justify" class="style17" style="margin-top: 0;"><em>ZEUS-3D</em> simulations were performed on a 500 <span class="style23">x</span> 500 uniform grid resolving the domain (<em>x,y</em>) = (<span class="style14">-</span>0.5:0.5,<span class="style14">-</span>0.5:0.5), with an additional 500 (uniform) <span class="style17" style="margin-top: 0; margin-bottom: 0;"><span class="style23">x</span></span> 150 (geometrically ratioed) zones in each of<span class="style17" style="margin-top: 0; margin-bottom: 0;"> two &quot;buffer regions&quot; (<em>x,y</em>) = (<span class="style14">-</span>0.5:0.5,<span class="style14">-</span>10:<span class="style14">-</span>0.5)</span> <span class="style17" style="margin-top: 0; margin-bottom: 0;">and <span class="style17" style="margin-top: 0; margin-bottom: 0;">(<em>x,y</em>) = (<span class="style14">-</span>0.5:0.5,0.5:10) to insulate the region of interest from unwanted reflections from the upper and lower boundaries.&nbsp; Others have used reflecting boundary conditions at <em>y</em> = +/<span class="style14">-</span>0.5 with success (<em>e.g</em>., Ryu <em>et al.</em>, 2000, ApJ, 545, 474), but this works only for relatively low Mach numbers (2<em>M</em> &lt; 1.2).&nbsp; At higher speeds, shocks are excited and much more of the region above and below the shear layer become dynamically important.&nbsp; Periodic boundary conditions were imposed on the left and right boundaries.</span></span></p>
+          <p align="justify" class="style17" style="margin-bottom: 0;">For a variety of relative Mach numbers, a shear layer of thickness 0.04<em>L </em>(where <em>L</em> = 1 is the width of the box) was initialised with<span class="style14"> r</span><sub>0</sub> = 1, <em>c</em><sub>s</sub> = 1, and perturbed with a sinusoidal transverse velocity with amplitude 0.001 and a specified wavelength.&nbsp; The non-zero thickness of the shear layer is <span class="style17" style="margin-top: 0; margin-bottom: 0;">to prevent minute numerical perturbations from breaking up a too-thin shear layer into small vortex tubes.</span>&nbsp; Figures 2 and 3 below show contour images of the vorticity component normal to the image plane (particularly effective at visualising the shear layer) for many of these simulations before the onset of non-linearity so that results may be compared directly with conclusions from linear theory.</p></td>
+      </tr>
+      <tr valign="top">
+        <td colspan="3">&nbsp;</td>
+      </tr>
+      <tr valign="top">
+        <td width="580" height="15"><table width="580" cellspacing="0" cellpadding="0" border="0">
+          <tr valign="top">
+            <td width="300"><img src="./images/khmach.gif" width="580" height="390"></td>
+          </tr>
+          <tr valign="top">
+            <td>&nbsp;</td>
+          </tr>
+          <tr valign="top">
+            <td><div align="justify"><span class="style17" style="margin-top: 0; margin-bottom: 0;">Figure 2.&nbsp;<em> ZEUS-3D</em> images showing the development of the K-H instability after <em>t</em> = 3 sound-crossing times for the relative Mach numbers indicated.&nbsp; Highest growth rate is for 1.25 &lt; 2<em>M</em> &lt; 1.5, whereas linear theory predicts highest growth rate at 2<em>M</em> = 1.73.&nbsp; This discrepency may  result from the non-zero thickness of the numerical shear layer, as opposed to  infinitesimally thin shear layer assumed by<span class="style17" style="margin-top: 0; margin-bottom: 0;"> linear theory</span>. Not shown are 2<em>M </em>= 2.5 and 2.75 which grow too slowly to be seen at<em> t </em>= 3 (but develop by <em>t</em> = 12), and 2<em>M </em>= 3.0 which remains stable through <em>t</em> = 12. Linear theory predicts stability at 2<em>M</em> = 2.83.</span></div></td>
+          </tr>
+          <tr valign="top">
+            <td>&nbsp;</td>
+          </tr>
+        </table>        </td>
+        <td width="20">&nbsp;</td>
+        <td height="15"><table width="300" cellspacing="0" cellpadding="0" border="0">
+          <tr valign="top">
+            <td width="300"><span style="margin-top: 0; margin-bottom: 0"><span class="style25" style="margin-top: 0; margin-bottom: 0;"><img src="./images/khlambda.gif" width="300" height="285"></span></span></td>
+          </tr>
+          <tr valign="top">
+            <td>&nbsp;</td>
+          </tr>
+          <tr valign="top">
+            <td><div align="justify"><span style="margin-top: 0; margin-bottom: 0;"><span class="style17" style="margin-top: 0; margin-bottom: 0;">Figure 3.&nbsp; <em>ZEUS-3D</em> images showing the development of the K-H instability for 2<em>M </em>= 1.5 at <em>t</em> = 0.75 sound-crossing times for the wavelengths shown.&nbsp; </span><span class="style17" style="margin-top: 0; margin-bottom: 0;"><em>L</em> = 1 is the length of the box.&nbsp; These results agree qualitatively with the linear result that the growth rate is inversely proportional to the wavelength. Note that non-linear effects are already apparent in the </span><span class="style17" style="margin-top: 0; margin-bottom: 0;"><span class="style14"><em>l</em></span> = <em>L</em>/4 case. </span></span></div></td>
+          </tr>
+        </table>        </td>
+      </tr>
+    </table>    </td>
+  </tr>
+  <tr valign="top">
+    <td height="22"><img src="../../../images/divider.gif" alt="" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="910" cellspacing="5" cellpadding="0" border="0">
+  
+  <tr valign="top">
+    <td colspan="8"><div align="justify"><span class="style17"><strong><em>Non-linear regime:</em></strong>&nbsp; The thumbnails below link to animations of the normal vorticity  for the indicated relative Mach numbers of the shear layer, and carry the simulations to <em>t </em>= 12, well beyond when linearity ceases to be valid.&nbsp; The sense of the shear is reversed in the animations compared with the contour images above.&nbsp; Thus, the top layer is moving to the left in the animations, and the bottom layer is moving to the right. </span></div></td>
+  </tr>
+  <tr valign="top">
+    <td colspan="8">&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td width="55"><div align="center"></div></td>
+    <td width="127"><div align="center"><a href="./animations/ziwn_0.25.mpg"><img src="./images/ziwn_0.25.gif" width="125" height="125" border="0"></a></div></td>
+    <td width="127"><div align="center"><a href="./animations/ziwn_0.5.mpg"><img src="./images/ziwn_0.5.gif" width="125" height="125" border="0"></a></div></td>
+    <td width="127"><div align="center"><a href="./animations/ziwn_0.75.mpg"><img src="./images/ziwn_0.75.gif" width="125" height="125" border="0"></a></div></td>
+    <td width="127"><div align="center"><a href="./animations/ziwn_1.0.mpg"><img src="./images/ziwn_1.0.gif" width="125" height="125" border="0"></a></div></td>
+    <td width="127"><div align="center"><a href="./animations/ziwn_1.25.mpg"><img src="./images/ziwn_1.25.gif" width="125" height="125" border="0"></a></div></td>
+    <td width="127"><div align="center"><a href="./animations/ziwn_1.5.mpg"><img src="./images/ziwn_1.5.gif" width="125" height="125" border="0"></a></div></td>
+    <td width="55"><div align="center"></div></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center" class="style17"></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 0.25 </span></div></td>
+    <td><div align="center"><span class="style17">2<em>M </em>= 0.50 </span></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 0.75 </span></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 1.00 </span></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 1.25 </span></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 1.50 </span></div></td>
+    <td><div align="center"><span class="style26"><span class="style18"></span></span></div></td>
+  </tr>
+  <tr valign="top">
+    <td colspan="8"><div align="center"><span class="style26"><span class="style18"></span></span></div></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center"><span class="style26"><span class="style18"></span></span>
+      <table width="52" cellspacing="0" cellpadding="0" border="0">
+        <tr valign="top">
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+        </tr>
+      </table>
+      </div></td>
+    <td><div align="center"><a href="./animations/ziwn_1.75.mpg"><img src="./images/ziwn_1.75.gif" width="125" height="125" border="0"></a></div></td>
+    <td><div align="center"><a href="./animations/ziwn_2.0.mpg"><img src="./images/ziwn_2.0.gif" width="125" height="125" border="0"></a></div></td>
+    <td><div align="center"><a href="./animations/ziwn_2.25.mpg"><img src="./images/ziwn_2.25.gif" width="125" height="125" border="0"></a></div></td>
+    <td><div align="center"><a href="./animations/ziwn_2.5.mpg"><img src="./images/ziwn_2.5.gif" width="125" height="125" border="0"></a></div></td>
+    <td><div align="center"><a href="./animations/ziwn_2.75.mpg"><img src="./images/ziwn2.75.gif" width="125" height="125" border="0"></a></div></td>
+    <td><div align="center"><a href="./animations/ziwn_3.0.mpg"><img src="./images/ziwn3.0.gif" width="125" height="125" border="0"></a></div></td>
+    <td><div align="center"><span class="style26"><span class="style18"></span></span>
+      <table width="53" cellspacing="0" cellpadding="0" border="0">
+        <tr valign="top">
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+        </tr>
+      </table>
+      </div></td>
+  </tr>
+  <tr valign="top">
+    <td><div align="center"><span class="style26"><span class="style18"></span></span></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 1.75 </span></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 2.00 </span></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 2.25 </span></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 2.50 </span></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 2.75 </span></div></td>
+    <td><div align="center"><span class="style17">2<em>M</em> = 3.00 </span></div></td>
+    <td><div align="center"><span class="style26"><span class="style18"></span></span></div></td>
+  </tr>
+  <tr valign="top">
+    <td colspan="8">&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td height="150" colspan="8"><div align="justify"><span class="style17">The formation of a &quot;cat's eye&quot; (a strong and sustained <em>vortex tube</em> prominant near the end of most of the animations) is a well-known effect and has been observed for years in simulations peformed by finite-difference codes (it is worth noting that most SPH codes cannot reproduce the K-H instability in general, and the cat's eye in particular).&nbsp; It is the end state for all unstable Mach numbers, with the most rapid growth at 2<em>M</em> ~ 1.5.&nbsp; For 2<em>M</em> &gt; 1 (supersonic relative speeds), shocks are excited above and below the shear plane which cause much more of the fluid to become involved.&nbsp; These animations have been &quot;bracketed&quot; so that crimson means zero vorticity and the deepest blue means the most negative value attained (always along the original shear layer at <em>t</em> = 0).&nbsp; &quot;Blood-red&quot; indicates positive vorticity only found in the shocks. </span></div></td>
+  </tr>
+  
+  <tr valign="top">
+    <td height="20" colspan="8"><img src="../../../images/divider.gif" alt="" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="910" cellspacing="5" cellpadding="0" border="0">
+  <tr valign="top">
+    <td height="642"><table width="900" cellspacing="0" cellpadding="0" border="0">
+      <tr valign="top">
+        <td colspan="3"><div align="justify"><span style="margin-top: 0; margin-bottom: 0"><span class="style28">Periodic boundary conditions: </span><span class="style17"> Periodic boundary conditions in dzeus35/36 are accurate to machine round-off error.&nbsp; Unlike an unsplit scheme where boundary conditions must be applied only at the end of each MHD cycle, boundary conditions must be applied frequently during each MHD cycle in <em>ZEUS-3D</em> owing to its operator and directionally split methods.&nbsp; A significant effort has been made to ensure that boundary conditions are applied as often as needed (but only as often as</span></span></div></td>
+      </tr>
+      <tr valign="top">
+        <td width="600"><div align="justify"><span class="style17" style="margin-top: 0; margin-bottom: 0;"><span style="margin-top: 0; margin-bottom: 0">needed) so that periodicity is maintained to machine accuracy.&nbsp; The same is true for all flavours of the reflecting boundary conditions.</span></span>
+        </div>
+          <p align="justify" style="margin-bottom: 0;"><span class="style17" style="margin-top: 0; margin-bottom: 0;">The thumbnails to the right are linked to mpegs of half-resolution simulations of the K-H instability at 2<em>M</em> = 1.0 with two periods. &nbsp;To machine accuracy, each period is identical to the other in all variables, indicating the periodic boundary condition behaves exactly as the central column of zones.&nbsp; Shown are both vorticity (with a reversed colour palette compared to the animations above) and density using a Courant number of 0.50.</span></p></td>
+        <td width="20"><table width="20" cellspacing="0" cellpadding="0" border="0">
+          <tr valign="top">
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+          </tr>
+        </table>        </td>
+        <td width="280"><table width="280" cellspacing="10" cellpadding="0" border="0">
+          <tr valign="top">
+            <td><a href="./animations/ziwn.cn0.50.mpg"><img src="./images/ziwn.cn0.50.gif" width="125" height="125" border="0"></a></td>
+            <td><a href="./animations/zid_.cn0.50.mpg"><img src="./images/zid_.cn0.50.gif" width="125" height="125" border="0"></a></td>
+          </tr>
+          <tr valign="top">
+            <td><div align="center"><span class="style17">vorticity</span></div></td>
+            <td><div align="center"><span class="style17">density</span></div></td>
+          </tr>
+        </table>        </td>
+      </tr>
+      <tr valign="top">
+        <td colspan="3">&nbsp;</td>
+      </tr>
+      <tr valign="top">
+        <td><div align="justify"><span style="margin-top: 0; margin-bottom: 0"><span class="style28">An unexplained numerical instability: </span><span class="style17">Animations linked to the thumbnails to the right are from simulations identical to those immediately above, except with a Courant number of 0.75.&nbsp; Oscillations superposed over what appear to be the correct solutions are apparent in all variables, particularly density, and as yet I have no explanation for this.&nbsp; The instability is &quot;cured&quot; by taking a lower </span></span><span style="margin-top: 0; margin-bottom: 0"><span class="style17">Courant number (in this case, 0.5), though I do not think this is a normal CFL violation since the amplitude of the oscillations stabilises at several percent of the underlying solution.&nbsp; CFL violations typically grow without bound.&nbsp; In these simulations, the wavelength is nine zones, regardless of the total number of zones across the box.</span></span></div></td>
+        <td>&nbsp;</td>
+        <td><table width="280" cellspacing="10" cellpadding="0" border="0">
+          <tr valign="top">
+            <td><a href="./animations/ziwn.cn0.75.mpg"><img src="./images/ziwn.cn0.75.gif" width="125" height="125" border="0"></a></td>
+            <td><a href="./animations/zid_.cn0.75.mpg"><img src="./images/zid_.cn0.75.gif" width="125" height="125" border="0"></a></td>
+          </tr>
+          <tr valign="top">
+            <td><div align="center"><span class="style17">vorticity</span></div></td>
+            <td><div align="center"><span class="style17">density</span></div></td>
+          </tr>
+        </table>        </td>
+      </tr>
+      <tr valign="top">
+        <td height="175" colspan="3"><div align="justify"><span style="margin-top: 0; margin-bottom: 0;"><span class="style17">The higher the relative shear velocity, the lower the Courant number needed to stabilise the flow.&nbsp; At 2<em>M</em> = 1.5, a Courant number of 0.35 is needed for stability and at 2<em>M </em>= 2.5, 0.25.&nbsp; Increasing either form of the artificial viscosity can also cure the problem, but I am convinced it is only because this also decreases the time step.&nbsp; Thus, I do not believe this is a problem in upwindedness (which the artificial viscosity is supposed to stabilise), though I have not ruled this out.&nbsp; It is clearly hydro in nature, since there is no magnetic field in these simulations, though curiously it does resemble the striping observed in advecting a magnetic flux loop, which is also cured by  lowering the Courant number (problem 4 in the 2-D Gallery). </span></span>
+        </div>
+          <p align="justify" class="style17" style="margin-bottom: 0;">Jim Stone agrees that this doesn't seem like a CFL violation nor an upwindedness problem, and has suggested this instability may be related to the operator split nature of the momentum equation, as he does not see this behaviour in <em>ATHENA</em>.</p></td>
+      </tr>
+    </table>    </td>
+  </tr>
+  
+  <tr valign="top">
+    <td height="25"><img src="../../../images/divider.gif" alt="" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+<table width="910" cellspacing="5" cellpadding="0" border="0">
+  <tr valign="top">
+    <td colspan="3"><div align="justify"><span class="style28">Kelvin-Helmholtz instabilities in nature: </span><span class="style17">The atmosphere surrounding a rapidly rotating planet is a particularly good natural laboratory for K-H instabilities since the coriolis effect is forever driving shear layers with relative speeds comparable to the rotation speed of the planet.&nbsp; On the Earth, K-H instabilities are occasionally observed in high clouds (Fig. 4).&nbsp; However, with its higher rotation speed, K-H instabilities are common-place in the Jovian atmosphere with the <em>Great Red Spot</em> (observed since Galileo's time) being the most spectacular example of a sustained cat's eye in the solar system (Fig. 5).</span></div></td>
+  </tr>
+  <tr valign="top">
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  
+  <tr valign="top">
+    <td width="496"><img src="./images/figkhclouds.jpg" width="495" height="250"></td>
+    <td width="23">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+    <td width="375"><img src="./images/figredspot.gif" width="375" height="250"></td>
+  </tr>
+  <tr valign="top">
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td><div align="justify"><span class="style17">Figure 4.&nbsp; Clouds often form along shear layers (separating air masses of differing moisture and temperature), and are thus subject to the Kelvin-Hlemholtz instability, particularly for sufficiently high shear velocities (photo credit: Brooks Martner, NOAA/ETL).</span></div></td>
+    <td>&nbsp;</td>
+    <td><div align="justify"><span class="style17">Figure 5.&nbsp; Jupiter's <em>Great Red Spot</em> is a vortex tube (cat's eye) suistained by transonic shear layers in the planet's atmosphere.&nbsp; Note the smaller-amplitude K-H instabilities in the surrounding gas, as well as within the Red Spot itself (photo credit: NASA).</span></div></td>
+  </tr>
+  <tr valign="top">
+    <td colspan="3">&nbsp;</td>
+  </tr>
+  <tr valign="top">
+    <td colspan="3"><img src="../../../images/divider.gif" alt="" width="900" height="10" border="0"></td>
+  </tr>
+</table>
+</body>
+</html>

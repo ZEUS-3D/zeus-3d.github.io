@@ -1,0 +1,73 @@
+**==*====1====*====2====*====3====*==*====3====*====2====*====1====*====
+**                                                                    **
+******************  CONDITIONAL COMPILATION SWITCHES  ******************
+**                                                                    **
+**  1) symmetry axes:  ISYM, JSYM, KSYM
+**
+*define   KSYM
+**
+**  2) geometry:  XYZ, or ZRP, or RTP
+**
+*define   XYZ 
+**
+**  3) physics:  GRAV, ISO, MHD, POLYTROPE, PSGRAV, RADIATION, TWOFLUID
+**
+*define   MHD
+**
+**  4) data output modes:  DISP, HDF, PIX, PLT1D, PLT2D, RADIO, TIMESL
+**                         VOX
+**
+*define   PLT1D, PLT2D, PIX, TIMESL
+**
+**  5) operating system:  AIX, CONVEXOS, LINUX, LINUXIFC, LINUXNAG, 
+**                        OS2GNU, OS2WATCOM, SUNOS, SUNOSGNU, UNICOS
+**
+*define   SUNOS
+**
+**  6) other:  DEBUG, FASTCMOC, HSMOC, MOC, NOMOC, RIEMANN, VECPOT
+**
+*define FASTCMOC
+**                                                                    **
+*************************  MODULE NAME ALIASES  ************************
+**                                                                    **
+**  The modules "BNDYUPDATE", "SPECIAL", "SPECIALSRC", "SPECIALTRN",
+**  "USERDUMP", "FINISH", and "USERSOURCE" are slots available to the 
+**  user to help adapt the code to the problem being solved.
+**
+*alias    START            mstart
+*alias    BNDYUPDATE       empty
+*alias    EXTENDGRID       empty
+*alias    GRAVITY          empty
+*alias    SPECIAL          empty 
+*alias    SOURCE           srcstep
+*alias    SPECIALSRC       empty 
+*alias    TRANSPORT        trnsprt
+*alias    SPECIALTRN       empty
+*alias    NEWTIMESTEP      newdt
+*alias    NEWGRID          empty
+*alias    DATAOUTPUT       dataio
+*alias    FINISH           empty
+**
+*alias    PROBLEM          blast
+*alias    ATMOSPHERE       empty
+*alias    PROBLEMRESTART   empty
+*alias    USERSOURCE       empty
+*alias    ARTIFICIALVISC   viscous
+*alias    DIFFUSION        empty
+*alias    USERDUMP         empty 
+**                                                                    **
+************************  ERROR CRITERIA ALIASES  **********************
+**                                                                    **
+*alias    GRAVITYERROR     1.0e-6
+*alias    GRIDERROR        1.0e-6
+*alias    PDVCOOLERROR     1.0e-6
+*alias    NEWVGERROR       1.0e-10
+*alias    RADIATIONERROR   1.0e-6
+**                                                                    **
+***********************  ITERATION LIMITS ALIASES  *********************
+**                                                                    **
+*alias    GRAVITYITER      600
+*alias    GRIDITER         20
+*alias    PDVCOOLITER      20
+*alias    NEWVGITER        20
+*alias    RADIATIONITER    20

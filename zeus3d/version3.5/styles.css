@@ -1,0 +1,82 @@
+/* ZEUS 3-D v3.5 Webpage Style Sheet
+  ! Logan Francis 2016 */
+
+/*
+
+  Extracted from head of server-side html file.
+
+*/
+
+.style4 {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: #9C253D;
+}
+.style5 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+.style6 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+.style7 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+.style12 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 24px;
+  color: #9C253D;
+}
+.style14 {
+  font-size: 12px;
+}
+.style15 {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #9C253D;
+}
+.style19 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+  color: #9C253D;
+}
+.style20 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22px;
+}
+.style16 {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+}
+.style17 {
+  font-size: 15px;
+  font-family: "Times New Roman", Times, serif;
+}
+.style18 {
+  font-size: 15px
+}
+.style26 {
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: #9C253D;
+}
+.style27 {color: #9C253D}
+.style31 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+a:visited {
+  color: #0066CC;
+}
+.style32 {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.style37 {font-size: 18px; font-family: "Times New Roman", Times, serif; }
